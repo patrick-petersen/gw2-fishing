@@ -8,7 +8,7 @@ class Item extends React.Component<ItemJson, ItemJson> {
     }
 
     render() {
-        return <p>{this.props.name}</p>
+        return <p><img src={this.props.icon}/>{this.props.name}</p>
     }
 
 }
