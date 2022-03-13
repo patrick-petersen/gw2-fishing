@@ -29,7 +29,7 @@ class Items extends React.Component<ItemsProps, ItemsState> {
     constructor(props: ItemsProps) {
         super(props);
 
-        this.progressInterval = setInterval(this.loadProgress, 60000);
+        this.progressInterval = setInterval(this.loadProgress.bind(this), 60000);
         this.state = {
             item:
                 {
