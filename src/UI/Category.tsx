@@ -1,24 +1,9 @@
 import React from 'react';
-import {GW2Api} from "../api/GW2Api";
+import {CategoryJson, GW2Api, state} from "../api/GW2Api";
 import Achievement from "./Achievement";
 
 type CategoryProps = {
     id: Number
-}
-
-type CategoryJson = {
-    id: Number,
-    name: string,
-    description: string,
-    order: number,
-    icon: string,
-    achievements: Number[]
-}
-
-enum state {
-    LOADING,
-    LOADED,
-    ERROR
 }
 
 type CategoryState = {
@@ -35,18 +20,18 @@ class Category extends React.Component<CategoryProps, CategoryState> {
         this.state = {
             state: state.LOADING,
         }
-
-        GW2Api.getCategory(props.id)
+    }
+    componentDidMount() {
+        GW2Api.getCategory(this.props.id)
             .then((response) => this.setState({
-            state: state.LOADED,
-            json:response
-        })).catch(reason => {
+                state: state.LOADED,
+                json:response
+            })).catch(reason => {
             this.setState({
                 state: state.ERROR,
                 error: reason
             })
         });
-
     }
 
     render() {

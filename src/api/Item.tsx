@@ -1,12 +1,12 @@
 import React from 'react';
 
 type ItemProps = {
-    name: string
+    id: Number
 }
 
 function Item(props: ItemProps) {
     return (
-        <span>{props.name}</span>
+        <span>{props.id}</span>
     );
 }
 
