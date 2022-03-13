@@ -24,9 +24,12 @@ type ItemsState = {
 }
 
 class Items extends React.Component<ItemsProps, ItemsState> {
+    private readonly progressInterval: NodeJS.Timer;
+
     constructor(props: ItemsProps) {
         super(props);
 
+        this.progressInterval = setInterval(this.loadProgress, 60000);
         this.state = {
             item:
                 {
@@ -40,21 +43,14 @@ class Items extends React.Component<ItemsProps, ItemsState> {
     }
 
     componentDidMount() {
-        GW2Api.getProgress(this.props.achievementId)
-            .then((response) => this.setState({
-                progress: {
-                    state: state.LOADED,
-                    json:response
-                }
-            })).catch(reason => {
-            this.setState({
-                progress: {
-                    state: state.ERROR,
-                    error: reason
-                }
-            })
-        });
+        this.loadItems();
+        this.loadProgress();
+    }
+    componentWillUnmount() {
+        clearInterval(this.progressInterval);
+    }
 
+    private loadItems() : void {
         GW2Api.getItems(this.props.ids)
             .then((response) => this.setState({
                 item: {
@@ -64,6 +60,23 @@ class Items extends React.Component<ItemsProps, ItemsState> {
             })).catch(reason => {
             this.setState({
                 item: {
+                    state: state.ERROR,
+                    error: reason
+                }
+            })
+        });
+    }
+
+    loadProgress() : void {
+        GW2Api.getProgress(this.props.achievementId)
+            .then((response) => this.setState({
+                progress: {
+                    state: state.LOADED,
+                    json:response
+                }
+            })).catch(reason => {
+            this.setState({
+                progress: {
                     state: state.ERROR,
                     error: reason
                 }
