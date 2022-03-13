@@ -1,15 +1,15 @@
 import React from 'react';
 
 type AreaProps = {
-    name: string
+    id: Number
 }
-class Area extends React.Component<AreaProps> {
+class Achievement extends React.Component<AreaProps> {
 
     render() {
         return (
             <div className="Area">
                 <header className="Area-header">
-                    <span>{this.props.name}</span>
+                    <span>{this.props.id}</span>
                 </header>
                 {this.props.children}
             </div>
@@ -18,4 +18,4 @@ class Area extends React.Component<AreaProps> {
 
 }
 
-export default Area;
+export default Achievement;
