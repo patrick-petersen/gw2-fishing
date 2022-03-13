@@ -1,0 +1,44 @@
+.Pools {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: baseline;
+  background-color: #aaa;
+  height: 100%;
+  justify-content: space-between;
+
+  .Pool {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #f0c;
+
+    .Pool-name {
+      width: 50px;
+      background-color: #30f;
+      flex-grow: 0;
+    }
+    
+    .TimeBlock {
+      background-color: #5f3;
+      flex-grow: 1;
+      display: table-cell;
+
+      .TimeBlock-header {
+        background-color: #ddd;
+      }
+
+      .Fish {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          flex-grow: 0;
+        }
+      }
+    }
+  }
+}
