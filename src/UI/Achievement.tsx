@@ -55,7 +55,7 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
                         <section className={"Achievement-section"}>
                             {
                                 this.state.json?.bits?
-                                    <Items ids={this.state.json?.bits?.map(value => value.id)} />:
+                                    <Items ids={this.state.json?.bits?.map(value => value.id)} achievementId={this.props.id} />:
                                     <p>No items</p>
                             }
                         </section>

@@ -5,6 +5,10 @@
 
   margin-bottom: 5px;
 
+  &.done {
+    background: gray;
+  }
+
   img {
     grid-row: 1 / span 3;
     grid-column: 1;
