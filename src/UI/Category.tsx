@@ -57,7 +57,7 @@ class Category extends React.Component<CategoryProps, CategoryState> {
                         <section className={"Category-section"}>
                             {
                                 // @ts-ignore
-                                this.state.json.achievements.map(value => <Achievement id={value} />)
+                                this.state.json.achievements.map(value => <Achievement key={value} id={value} />)
                             }
                         </section>
 
