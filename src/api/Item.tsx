@@ -9,7 +9,8 @@ class Item extends React.Component<ItemJson, ItemJson> {
     }
 
     render() {
-        return <p><img src={this.props.icon}/>{this.props.name}<p>{FishData.getFishByName(this.props.name)?.toString()}</p></p>
+        //FishData.getFishByName(this.props.name)
+        return <p><img src={this.props.icon}/>{this.props.name}</p>
     }
 
 }
