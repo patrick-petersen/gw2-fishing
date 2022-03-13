@@ -100,28 +100,59 @@ export abstract class GW2Api {
         //https://api.guildwars2.com/v2/achievements/categories/317
 
         return fetch("https://api.guildwars2.com/v2/achievements/categories/" + id)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw Error(response.statusText);
+                }
+                return response;
+            })
             .then(response => response.json());
     }
 
     public static getAchievement(id: Number): Promise<AchievementJson> {
         //https://api.guildwars2.com/v2/achievements?ids=6201,6478,6109,6284,6279,6336
         return fetch("https://api.guildwars2.com/v2/achievements?ids=" + id)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw Error(response.statusText);
+                }
+                return response;
+            })
             .then(response => response.json())
             .then(response => response[0]);
     }
 
     public static getItems(ids: Number[]): Promise<ItemJson[]> {
-        return fetch("https://api.guildwars2.com/v2/items?ids=" + ids.map(value => ""+value).reduce((previousValue, currentValue) => previousValue + "," + currentValue))
+        const idsString = ids.map(value => ""+value).reduce((previousValue, currentValue) => previousValue + "," + currentValue);
+        return fetch("https://api.guildwars2.com/v2/items?ids=" + idsString)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw Error(response.statusText);
+                }
+                return response;
+            })
             .then(response => response.json());
     }
 
     public static getItem(id: Number): Promise<ItemJson> {
         return fetch("https://api.guildwars2.com/v2/items/" + id)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw Error(response.statusText);
+                }
+                return response;
+            })
             .then(response => response.json());
     }
 
     public static getProgress(id: Number): Promise<Progress> {
         return fetch("https://api.guildwars2.com/v2/account/achievements?access_token="+GW2Api.access_token+"&id=" + id)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw Error(response.statusText);
+                }
+                return response;
+            })
             .then(response => response.json());
 
     }
