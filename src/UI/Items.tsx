@@ -1,5 +1,5 @@
 import React from 'react';
-import {AchievementJson, GW2Api, ItemJson, Progress, state} from "../api/GW2Api";
+import {GW2Api, ItemJson, Progress, state} from "../api/GW2Api";
 import Item from "./Item";
 import {FishData, TimeOfDay} from "../api/FishData";
 
@@ -68,20 +68,22 @@ class Items extends React.Component<ItemsProps, ItemsState> {
     }
 
     loadProgress() : void {
-        GW2Api.getProgress(this.props.achievementId)
-            .then((response) => this.setState({
-                progress: {
-                    state: state.LOADED,
-                    json:response
-                }
-            })).catch(reason => {
-            this.setState({
-                progress: {
-                    state: state.ERROR,
-                    error: reason
-                }
-            })
-        });
+        if(!this.state.progress.error) {
+            GW2Api.getProgress(this.props.achievementId)
+                .then((response) => this.setState({
+                    progress: {
+                        state: state.LOADED,
+                        json:response
+                    }
+                })).catch(reason => {
+                this.setState({
+                    progress: {
+                        state: state.ERROR,
+                        error: reason
+                    }
+                })
+            });
+        }
     }
 
     render() {
