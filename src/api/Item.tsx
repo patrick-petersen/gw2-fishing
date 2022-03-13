@@ -1,5 +1,6 @@
 import React from 'react';
 import {ItemJson, state} from "./GW2Api";
+import {FishData} from "./FishData";
 
 class Item extends React.Component<ItemJson, ItemJson> {
 
@@ -8,7 +9,7 @@ class Item extends React.Component<ItemJson, ItemJson> {
     }
 
     render() {
-        return <p><img src={this.props.icon}/>{this.props.name}</p>
+        return <p><img src={this.props.icon}/>{this.props.name}<p>{FishData.getFishByName(this.props.name)?.toString()}</p></p>
     }
 
 }
