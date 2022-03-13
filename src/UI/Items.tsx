@@ -1,7 +1,9 @@
 import React from 'react';
 import {AchievementJson, GW2Api, ItemJson, state} from "../api/GW2Api";
-import Item from "../api/Item";
-import {FishData, TimeOfDay} from "./FishData";
+import Item from "./Item";
+import {FishData, TimeOfDay} from "../api/FishData";
+
+import "./Item.scss";
 
 type ItemsProps = {
     ids: Number[]
@@ -54,6 +56,7 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                         <section className={"Items-section"}>
                             <table>
                                 {(() => {
+                                    //TODO: Even I cant read this, refactor!
                                     const t = this.state.json?.map(value => {
                                         return {
                                             item: value,

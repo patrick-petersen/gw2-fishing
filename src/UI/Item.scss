@@ -1,0 +1,17 @@
+.fish {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content min-content min-content;
+
+  margin-bottom: 5px;
+
+  img {
+    grid-row: 1 / span 3;
+    grid-column: 1;
+  }
+
+  span {
+    grid-column: 2;
+  }
+
+}
