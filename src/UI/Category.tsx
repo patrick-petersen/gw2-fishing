@@ -50,14 +50,11 @@ class Category extends React.Component<CategoryProps, CategoryState> {
                 return (
                     <div className="Category">
                         <header className="Category-header">
-                            <span>Category: {
-                                // @ts-ignore
-                                this.state.json.name}</span>
+                            <span>Category: {this.state.json?.name}</span>
                         </header>
                         <section className={"Category-section"}>
                             {
-                                // @ts-ignore
-                                this.state.json.achievements.map(value => <Achievement key={value} id={value} />)
+                                this.state.json?.achievements.map(value => <Achievement key={""+value} id={value} />)
                             }
                         </section>
 

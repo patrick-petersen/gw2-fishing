@@ -104,33 +104,33 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                             <table className={this.state.progress.json&&this.state.progress.json.done?"done":"todo"}>
                                 {(() => {
                                     //TODO: Even I cant read this, refactor!
-                                    const t = this.state.item.json?.map((value, index) => {
+                                    const enrichedGroupedFish = this.state.item.json?.map((value, index) => {
                                         return {
                                             item: value,
                                             metadata: FishData.getFishByName(value.name),
                                             progress: this.state.progress.json?this.state.progress.json.bits?.includes(index):false
                                         }
-                                    }).reduce(function (r, a) {
-                                        if(a.metadata) {
-                                            const hole = a.metadata["Fishing Hole"];
-                                            const time = a.metadata["Time of Day"];
-                                            r[hole] = r[hole] || [];
-                                            r[hole][time] = r[hole][time] || [];
-                                            r[hole][time].push(a);
+                                    }).reduce(function (aggregation, currentFish) {
+                                        if(currentFish.metadata) {
+                                            const hole = currentFish.metadata["Fishing Hole"];
+                                            const time = currentFish.metadata["Time of Day"];
+                                            aggregation[hole] = aggregation[hole] || [];
+                                            aggregation[hole][time] = aggregation[hole][time] || [];
+                                            aggregation[hole][time].push(currentFish);
                                         }
 
-                                        return r;
+                                        return aggregation;
                                     }, Object.create(null));
 
                                     return [
-                                        <thead key={"head"}><tr key={"headline"}><th key={"empty"}></th>
+                                        <thead key={"head"}><tr key={"headline"}><th key={"empty"}/>
                                         {
                                             Object.values(TimeOfDay).map(value => <th key={value}>{value}</th>)
                                         }
                                         </tr></thead>,
                                         <tbody key={"body"}>
                                             {
-                                                Object.entries(t).map((hole) => {
+                                                Object.entries(enrichedGroupedFish).map((hole) => {
                                                     const key = hole[0];
                                                     const times : any = hole[1];
 
