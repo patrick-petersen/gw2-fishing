@@ -88,7 +88,7 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                             <span>Items:</span>
                         </header>
                         <section className={"Items-section"}>
-                            <table>
+                            <table className={this.state.progress.json&&this.state.progress.json.done?"done":"todo"}>
                                 {(() => {
                                     //TODO: Even I cant read this, refactor!
                                     const t = this.state.item.json?.map((value, index) => {

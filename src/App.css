@@ -5,3 +5,7 @@
 table, tr, th, td {
   border: 1px solid black;
 }
+
+table.done {
+  background: green;
+}
