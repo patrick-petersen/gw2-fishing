@@ -1,13 +1,16 @@
 import React from 'react';
+import {ItemJson, state} from "./GW2Api";
 
-type ItemProps = {
-    id: Number
-}
+class Item extends React.Component<ItemJson, ItemJson> {
 
-function Item(props: ItemProps) {
-    return (
-        <span>{props.id}</span>
-    );
+    constructor(props: ItemJson) {
+        super(props);
+    }
+
+    render() {
+        return <p>{this.props.name}</p>
+    }
+
 }
 
 export default Item;

@@ -1,6 +1,7 @@
 import React from 'react';
 import {AchievementJson, GW2Api, state} from "../api/GW2Api";
 import Item from "../api/Item";
+import Items from "../api/Items";
 
 type AchievementProps = {
     id: Number
@@ -53,13 +54,9 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
                         </header>
                         <section className={"Achievement-section"}>
                             {
-                                this.state.json?.bits?.map(value => {
-                                    switch(value.type) {
-                                        case "Item":return <Item id={value.id}/>;
-                                        default:
-                                            return <p>Unhandled type: {value.type}</p>
-                                    }
-                                })
+                                this.state.json?.bits?
+                                    <Items ids={this.state.json?.bits?.map(value => value.id)} />:
+                                    <p>No items</p>
                             }
                         </section>
 
