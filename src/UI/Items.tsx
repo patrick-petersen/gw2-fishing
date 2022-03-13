@@ -68,14 +68,14 @@ class Items extends React.Component<ItemsProps, ItemsState> {
     }
 
     loadProgress() : void {
-        if(!this.state.progress.error) {
-            GW2Api.getProgress(this.props.achievementId)
-                .then((response) => this.setState({
-                    progress: {
-                        state: state.LOADED,
-                        json:response
-                    }
-                })).catch(reason => {
+        GW2Api.getProgress(this.props.achievementId)
+            .then((response) => this.setState({
+                progress: {
+                    state: state.LOADED,
+                    json:response
+                }
+            })).catch(reason => {
+                clearInterval(this.progressInterval);
                 this.setState({
                     progress: {
                         state: state.ERROR,
@@ -83,7 +83,6 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                     }
                 })
             });
-        }
     }
 
     render() {
