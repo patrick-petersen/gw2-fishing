@@ -1,7 +1,7 @@
 import React from 'react';
 import {AchievementJson, GW2Api, ItemJson, state} from "../api/GW2Api";
 import Item from "../api/Item";
-import {FishData} from "./FishData";
+import {FishData, TimeOfDay} from "./FishData";
 
 type ItemsProps = {
     ids: Number[]
@@ -61,42 +61,38 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                                         }
                                     }).reduce(function (r, a) {
                                         if(a.metadata) {
-                                            const tod = a.metadata["Time of Day"];
-                                            r[tod] = r[tod] || [];
-                                            r[tod].push(a);
+                                            const hole = a.metadata["Fishing Hole"];
+                                            const time = a.metadata["Time of Day"];
+                                            r[hole] = r[hole] || [];
+                                            r[hole][time] = r[hole][time] || [];
+                                            r[hole][time].push(a);
                                         }
 
                                         return r;
                                     }, Object.create(null));
 
-                                    //console.log(t);
-
                                     return [
-                                        <tr>
+                                        <thead key={"head"}><tr key={"headline"}><th key={"empty"}></th>
                                         {
-                                            Object.entries(t).map((value) => {
-                                            const key = value[0];
-                                            const fish = value[1];
-                                            return (<th>{key}</th>)})
+                                            Object.values(TimeOfDay).map(value => <th key={value}>{value}</th>)
                                         }
-                                        </tr>,
-                                        <tr>
+                                        </tr></thead>,
+                                        <tbody key={"body"}>
                                             {
-                                                Object.entries(t).map((value) => {
-                                                    const key = value[0];
-                                                    const fish = value[1];
-                                                    return (<td>
+                                                Object.entries(t).map((hole) => {
+                                                    const key = hole[0];
+                                                    const times : any = hole[1];
+
+                                                    return (<tr key={key}><td key={"name"}>{key}</td>
                                                         {
                                                             // @ts-ignore
-                                                            fish.map(onefish => <Item {...onefish.item}/>)
+                                                            Object.keys(TimeOfDay).map(time => <td key={time}>{times[time]?.map(onefish => <Item key={onefish.item.name} {...onefish.item}/>)}</td>)
                                                         }
-                                                    </td>)
+                                                    </tr>)
                                                 })
                                             }
-                                        </tr>]
-
-
-                                    //return this.state.json?.map(value => <Item {...value}/>)
+                                        </tbody>
+                                        ]
                                 })()}
                             </table>
                         </section>
