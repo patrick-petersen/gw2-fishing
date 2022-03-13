@@ -1,9 +1,12 @@
 import React from 'react';
 
-type AreaProps = {
+type AchievementProps = {
     id: Number
 }
-class Achievement extends React.Component<AreaProps> {
+class Achievement extends React.Component<AchievementProps> {
+    constructor(props: AchievementProps) {
+        super(props);
+    }
 
     render() {
         return (
