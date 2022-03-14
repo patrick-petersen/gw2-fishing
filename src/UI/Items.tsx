@@ -1,7 +1,7 @@
 import React from 'react';
 import {GW2Api, ItemJson, Progress, state} from "../api/GW2Api";
 import Item from "./Item";
-import {FishData, TimeOfDay} from "../api/FishData";
+import {Fish, FishData, TimeOfDay} from "../api/FishData";
 
 import "./Item.scss";
 
@@ -21,6 +21,26 @@ type ItemsState = {
         json?: Progress
         error?: string
     },
+}
+
+type SingleEnrichedFish = {
+    item: ItemJson,
+    metadata: Fish,
+    progress: boolean
+}
+/*
+
+                                            item: value,
+                                            metadata: FishData.getFishByName(value.name),
+                                            progress: this.state.progress.json?this.state.progress.json.bits?.includes(index):false
+*/
+
+type FishByTime = {
+    [key in TimeOfDay] : SingleEnrichedFish[]
+}
+
+type EnrichedFish = {
+    [key: string]: FishByTime
 }
 
 class Items extends React.Component<ItemsProps, ItemsState> {
@@ -105,7 +125,7 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                             <table className={this.state.progress.json&&this.state.progress.json.done?"done":"todo"}>
                                 {(() => {
                                     //TODO: Even I cant read this, refactor!
-                                    const enrichedGroupedFish = this.state.item.json?.map((value, index) => {
+                                    const enrichedGroupedFish : EnrichedFish = this.state.item.json?.map((value, index) => {
                                         return {
                                             item: value,
                                             metadata: FishData.getFishByName(value.name),
@@ -133,12 +153,11 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                                             {
                                                 Object.entries(enrichedGroupedFish).map((hole) => {
                                                     const key = hole[0];
-                                                    const times : any = hole[1];
+                                                    const times : FishByTime = hole[1];
 
                                                     return (<tr key={key}><td key={"name"}>{key}</td>
                                                         {
-                                                            // @ts-ignore
-                                                            Object.keys(TimeOfDay).map(time => <td key={time}>{times[time]?.map(onefish => <Item key={onefish.item.name} progress={onefish.progress} {...onefish.item}/>)}</td>)
+                                                            Object.values(TimeOfDay).map(time => <td key={time}>{times[time]?.map(oneFish => <Item key={oneFish.item.name} progress={oneFish.progress} {...oneFish.item}/>)}</td>)
                                                         }
                                                     </tr>)
                                                 })
