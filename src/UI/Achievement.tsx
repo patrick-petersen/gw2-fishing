@@ -1,6 +1,5 @@
 import React from 'react';
 import {AchievementJson, GW2Api, state} from "../api/GW2Api";
-import Item from "./Item";
 import Items from "./Items";
 
 type AchievementProps = {

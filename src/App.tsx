@@ -1,11 +1,9 @@
 import React from 'react';
 import './App.css';
-import Category from "./UI/Category";
+import Landing from "./UI/Landing";
 
 function App() {
-  return (
-      <Category id={317} />
-  );
+  return (<Landing />);
 }
 
 export default App;
