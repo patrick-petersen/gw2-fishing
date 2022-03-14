@@ -21,7 +21,8 @@ export type Fish = {
 export abstract class FishData {
     public static getFishByName(name: string) : Fish | undefined {
         //TODO: Improve performance with HashMap or sth
-        return fish.filter(value => value.Fish === name).pop();
+
+        return fishLookup[name];
     }
 }
 
@@ -3339,3 +3340,11 @@ const fish : Fish[] = [
         "Achieve Order": ""
     }
 ];
+
+const fishLookup = fish.reduce(function (aggregation, currentFish) {
+    if(currentFish) {
+        const name = currentFish.Fish;
+        aggregation[name] = currentFish;
+    }
+    return aggregation;
+}, Object.create(null));
