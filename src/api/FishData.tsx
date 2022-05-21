@@ -522,7 +522,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Oarfish",
-        "Fishing Hole": "channel Fish",
+        "Fishing Hole": "Channel Fish",
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
