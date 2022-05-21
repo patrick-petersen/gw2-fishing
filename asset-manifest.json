@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gw2-fishing/static/css/main.092c4ca8.css",
-    "main.js": "/gw2-fishing/static/js/main.a760dc09.js",
+    "main.css": "/gw2-fishing/static/css/main.34e05928.css",
+    "main.js": "/gw2-fishing/static/js/main.9972e196.js",
     "static/js/787.8c98c049.chunk.js": "/gw2-fishing/static/js/787.8c98c049.chunk.js",
     "index.html": "/gw2-fishing/index.html",
-    "main.092c4ca8.css.map": "/gw2-fishing/static/css/main.092c4ca8.css.map",
-    "main.a760dc09.js.map": "/gw2-fishing/static/js/main.a760dc09.js.map",
+    "main.34e05928.css.map": "/gw2-fishing/static/css/main.34e05928.css.map",
+    "main.9972e196.js.map": "/gw2-fishing/static/js/main.9972e196.js.map",
     "787.8c98c049.chunk.js.map": "/gw2-fishing/static/js/787.8c98c049.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.092c4ca8.css",
-    "static/js/main.a760dc09.js"
+    "static/css/main.34e05928.css",
+    "static/js/main.9972e196.js"
   ]
 }
