@@ -9,3 +9,27 @@ table, tr, th, td {
 table.done {
   background: green;
 }
+
+.rarity-Fine .name {
+  color: #62A4DA;
+}
+
+.rarity-Masterwork .name {
+  color: #1a9306;
+}
+
+.rarity-Rare .name {
+  color: #fcd00b;
+}
+
+.rarity-Exotic .name {
+  color: #ffa405;
+}
+
+.rarity-Ascended .name {
+  color: #fb3e8d;
+}
+
+.rarity-Legendary .name {
+  color: #4C139D;
+}
