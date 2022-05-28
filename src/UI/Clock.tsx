@@ -1,6 +1,5 @@
 import React from 'react';
 import './Clock.css';
-import timeBlock from "./TimeBlock";
 
 type ClockProps = {
     id: number
@@ -8,6 +7,7 @@ type ClockProps = {
 
 type ClockState = {
     time: Date,
+    showDetails: Boolean
 }
 
 type TimeBlock = {
@@ -79,10 +79,12 @@ class Clock extends React.Component<ClockProps, ClockState> {
     constructor(props : ClockProps) {
         super(props);
         this.state = {
-            time: new Date()
+            time: new Date(),
+            showDetails: false
         };
 
         this.getCurrentTyriaTime = this.getCurrentTyriaTime.bind(this);
+        this.toggleDetails = this.toggleDetails.bind(this);
     }
     componentDidMount() {
         this.intervalID = setInterval(
@@ -135,20 +137,33 @@ class Clock extends React.Component<ClockProps, ClockState> {
         })
     }
 
+    toggleDetails() {
+        this.setState({
+            showDetails: !this.state.showDetails
+        })
+    }
+
     render() {
         return (
             <div className={"clock"}>
-                <div className={"time"}>
+                {this.state.showDetails && <div className={"time"}>
                     Date: {this.state.time.toDateString()}; Tyria Seconds: {this.getCurrentTyriaTime(this.state.time)}; Tyria Time: {this.timeToString(this.getCurrentTyriaTime(this.state.time))}
+                </div>}
+                <div>
+                    {this.state.showDetails && <span>Core Tyria</span>}
+                    <div className={"inner"}>
+                        {this.renderTimeBlock(coreTyria)}
+                        <div className={"current"} style={{left: (this.getCurrentTyriaTime(this.state.time) / 24 / 60 / 60 * 100) + "%"}}></div>
+                    </div>
                 </div>
-                <div className={"inner"}>
-                    {this.renderTimeBlock(coreTyria)}
-                    <div className={"current"} style={{left: (this.getCurrentTyriaTime(this.state.time) / 24 / 60 / 60 * 100) + "%"}}></div>
+                <div>
+                    {this.state.showDetails && <span>Cantha</span>}
+                    <div className={"inner"}>
+                        {this.renderTimeBlock(cantha)}
+                        <div className={"current"} style={{left: (this.getCurrentTyriaTime(this.state.time) / 24 / 60 / 60 * 100) + "%"}}></div>
+                    </div>
                 </div>
-                <div className={"inner"}>
-                    {this.renderTimeBlock(cantha)}
-                    <div className={"current"} style={{left: (this.getCurrentTyriaTime(this.state.time) / 24 / 60 / 60 * 100) + "%"}}></div>
-                </div>
+                <div className={"toggle-details"} onClick={this.toggleDetails}>toggle details</div>
             </div>
         );
     }
