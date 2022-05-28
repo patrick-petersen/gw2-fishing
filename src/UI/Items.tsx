@@ -28,12 +28,6 @@ type SingleEnrichedFish = {
     metadata: Fish,
     progress: boolean
 }
-/*
-
-                                            item: value,
-                                            metadata: FishData.getFishByName(value.name),
-                                            progress: this.state.progress.json?this.state.progress.json.bits?.includes(index):false
-*/
 
 type FishByTime = {
     [key in TimeOfDay] : SingleEnrichedFish[]
@@ -44,12 +38,11 @@ type EnrichedFish = {
 }
 
 class Items extends React.Component<ItemsProps, ItemsState> {
-    private readonly progressInterval: NodeJS.Timer;
+    private progressInterval: NodeJS.Timer | undefined ;
 
     constructor(props: ItemsProps) {
         super(props);
 
-        this.progressInterval = setInterval(this.loadProgress.bind(this), 60000);
         this.state = {
             item:
                 {
@@ -65,9 +58,12 @@ class Items extends React.Component<ItemsProps, ItemsState> {
     componentDidMount() {
         this.loadItems();
         this.loadProgress();
+        this.progressInterval = setInterval(this.loadProgress.bind(this), 60000);
     }
     componentWillUnmount() {
-        clearInterval(this.progressInterval);
+        if(this.progressInterval) {
+            clearInterval(this.progressInterval);
+        }
     }
 
     private loadItems() : void {
@@ -92,10 +88,13 @@ class Items extends React.Component<ItemsProps, ItemsState> {
             .then((response) => this.setState({
                 progress: {
                     state: state.LOADED,
-                    json:response
+                    json: response
                 }
             })).catch(reason => {
-                clearInterval(this.progressInterval);
+                if(this.progressInterval) {
+                    clearInterval(this.progressInterval);
+                }
+
                 this.setState({
                     progress: {
                         state: state.ERROR,
@@ -122,7 +121,7 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                             <span>Items:</span>
                         </header>
                         <section className={"Items-section"}>
-                            <table className={this.state.progress.json&&this.state.progress.json.done?"done":"todo"}>
+                            <table className={(this.state.progress.json && this.state.progress.json.done)?"done":"todo"}>
                                 {(() => {
                                     //TODO: Even I cant read this, refactor!
                                     const enrichedGroupedFish : EnrichedFish = this.state.item.json?.map((value, index) => {

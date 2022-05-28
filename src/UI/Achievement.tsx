@@ -2,12 +2,15 @@ import React from 'react';
 import {AchievementJson, GW2Api, state} from "../api/GW2Api";
 import Items from "./Items";
 
+import './Achievement.css';
+
 type AchievementProps = {
     id: Number
 }
 
 type AchievementState = {
     state: state,
+    collapsed: boolean,
     json?: AchievementJson
     error?: string
 }
@@ -18,8 +21,16 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
 
         this.state = {
             state: state.LOADING,
+            collapsed: false,
         }
+        this.toggleCollapse = this.toggleCollapse.bind(this);
     }
+
+    toggleCollapse() {
+        this.setState({
+            collapsed: !this.state.collapsed
+        })
+    };
 
     componentDidMount() {
         GW2Api.getAchievement(this.props.id)
@@ -48,17 +59,16 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
                 return (
                     <div className="Achievement">
                         <header className="Achievement-header">
-                            <span>Achievement: {
+                            <span onClick={this.toggleCollapse}>Achievement: {
                                 this.state.json?.name}</span>
                         </header>
-                        <section className={"Achievement-section"}>
+                        {!this.state.collapsed && <section className={"Achievement-section"}>
                             {
                                 this.state.json?.bits?
                                     <Items ids={this.state.json?.bits?.map(value => value.id)} achievementId={this.props.id} />:
                                     <p>No items</p>
                             }
-                        </section>
-
+                        </section>}
                     </div>
                 );
             case state.ERROR:
