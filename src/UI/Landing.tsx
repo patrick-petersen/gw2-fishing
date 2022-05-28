@@ -4,6 +4,9 @@ import Category from "./Category";
 import {GW2Api} from "../api/GW2Api";
 import Cookies from 'universal-cookie';
 import Clock from "./Clock";
+
+import './Landing.css';
+
 type LandingProps = {
 }
 
@@ -42,10 +45,10 @@ class Landing extends React.Component<LandingProps, LandingState> {
             return <AccessTokenInput access_token={this.state.access_token} callback={this.callback}/>
         }
         else {
-            return [
-                <Clock id={1} />,
-                <Category id={317} />
-            ]
+            return <div className={"body"}>
+                <div className={"header"}><Clock id={1} /></div>
+                <div className={"content"}><Category id={317} /></div>
+            </div>
         }
     }
 }
