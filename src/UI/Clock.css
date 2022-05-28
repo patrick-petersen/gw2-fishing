@@ -1,0 +1,23 @@
+.clock {
+}
+
+.clock .inner {
+    position: relative;
+    height: 2em;
+    border: 1px solid black;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.clock .inner .current {
+    position: absolute;
+    height: 100%;
+    background-color: red;
+    width: 2px;
+}
+.clock .inner .block {
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid black;
+    overflow: hidden;
+}

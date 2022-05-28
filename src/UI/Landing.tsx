@@ -3,6 +3,7 @@ import AccessTokenInput from "./AccessTokenInput";
 import Category from "./Category";
 import {GW2Api} from "../api/GW2Api";
 import Cookies from 'universal-cookie';
+import Clock from "./Clock";
 type LandingProps = {
 }
 
@@ -41,7 +42,10 @@ class Landing extends React.Component<LandingProps, LandingState> {
             return <AccessTokenInput access_token={this.state.access_token} callback={this.callback}/>
         }
         else {
-            return <Category id={317}/>
+            return [
+                <Clock id={1} />,
+                <Category id={317} />
+            ]
         }
     }
 }

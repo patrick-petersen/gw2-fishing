@@ -1,4 +1,6 @@
 import React from 'react';
+import './Clock.css';
+import timeBlock from "./TimeBlock";
 
 type ClockProps = {
     id: number
@@ -7,6 +9,70 @@ type ClockProps = {
 type ClockState = {
     time: Date,
 }
+
+type TimeBlock = {
+    startTime: number,
+    endTime: number,
+    name: string
+}
+
+const coreTyria : TimeBlock[] = [
+    {
+        startTime: 0,
+        endTime: 5*60*60,
+        name: "Night"
+    },
+    {
+        startTime: 5*60*60,
+        endTime: 6*60*60,
+        name: "Dawn"
+    },
+    {
+        startTime: 6*60*60,
+        endTime: 20*60*60,
+        name: "Day"
+    },
+    {
+        startTime: 20*60*60,
+        endTime: 21*60*60,
+        name: "Dusk"
+    },
+    {
+        startTime: 21*60*60,
+        endTime: 24*60*60,
+        name: "Night"
+    },
+];
+
+const cantha : TimeBlock[] = [
+    {
+        startTime: 0,
+        endTime: 7*60*60,
+        name: "Night"
+    },
+    {
+        startTime: 7*60*60,
+        endTime: 8*60*60,
+        name: "Dawn"
+    },
+    {
+        startTime: 8*60*60,
+        endTime: 19*60*60,
+        name: "Day"
+    },
+    {
+        startTime: 19*60*60,
+        endTime: 20*60*60,
+        name: "Dusk"
+    },
+    {
+        startTime: 20*60*60,
+        endTime: 24*60*60,
+        name: "Night"
+    },
+]
+
+
 class Clock extends React.Component<ClockProps, ClockState> {
     private intervalID: NodeJS.Timer | undefined;
 
@@ -61,11 +127,29 @@ class Clock extends React.Component<ClockProps, ClockState> {
         return ('0'.repeat(zeros) + number).slice(zeros * -1)
     }
 
+    renderTimeBlock(timeBlocks: TimeBlock[]) {
+        return timeBlocks.map(value => {
+            const startPercent = value.startTime / (60*60*24) * 100;
+            const width = (value.endTime - value.startTime) / (60*60*24) * 100;
+            return <div className={"block"} style={{left: startPercent + "%", width: width + "%"}}>{value.name}</div>
+        })
+    }
+
     render() {
         return (
-            <p className="App-clock">
-                Date: {this.state.time.toDateString()}; Tyria Seconds: {this.getCurrentTyriaTime(this.state.time)}; Tyria Time: {this.timeToString(this.getCurrentTyriaTime(this.state.time))}
-            </p>
+            <div className={"clock"}>
+                <div className={"time"}>
+                    Date: {this.state.time.toDateString()}; Tyria Seconds: {this.getCurrentTyriaTime(this.state.time)}; Tyria Time: {this.timeToString(this.getCurrentTyriaTime(this.state.time))}
+                </div>
+                <div className={"inner"}>
+                    {this.renderTimeBlock(coreTyria)}
+                    <div className={"current"} style={{left: (this.getCurrentTyriaTime(this.state.time) / 24 / 60 / 60 * 100) + "%"}}></div>
+                </div>
+                <div className={"inner"}>
+                    {this.renderTimeBlock(cantha)}
+                    <div className={"current"} style={{left: (this.getCurrentTyriaTime(this.state.time) / 24 / 60 / 60 * 100) + "%"}}></div>
+                </div>
+            </div>
         );
     }
 }
