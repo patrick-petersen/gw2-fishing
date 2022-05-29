@@ -1,3 +1,7 @@
 .Achievement .Achievement-header span {
     cursor: pointer;
 }
+
+.Achievement .Achievement-header.done {
+    background-color: green;
+}

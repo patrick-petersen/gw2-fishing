@@ -1,5 +1,5 @@
 import React from 'react';
-import {AchievementJson, GW2Api, state} from "../api/GW2Api";
+import {AchievementJson, GW2Api, state, Progress} from "../api/GW2Api";
 import Items from "./Items";
 
 import './Achievement.css';
@@ -12,7 +12,8 @@ type AchievementState = {
     state: state,
     collapsed: boolean,
     json?: AchievementJson
-    error?: string
+    error?: string,
+    progress: Progress | undefined
 }
 
 class Achievement extends React.Component<AchievementProps, AchievementState> {
@@ -22,8 +23,10 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
         this.state = {
             state: state.LOADING,
             collapsed: false,
+            progress: undefined
         }
         this.toggleCollapse = this.toggleCollapse.bind(this);
+        this.dataLoadedCallback = this.dataLoadedCallback.bind(this);
     }
 
     toggleCollapse() {
@@ -44,6 +47,11 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
             })
         });
     }
+    dataLoadedCallback(progress: Progress) {
+        this.setState({
+            progress: progress
+        });
+    }
 
     render() {
         switch (this.state.state) {
@@ -58,14 +66,13 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
             case state.LOADED:
                 return (
                     <div className="Achievement">
-                        <header className="Achievement-header">
-                            <span onClick={this.toggleCollapse}>Achievement: {
-                                this.state.json?.name}</span>
+                        <header className={"Achievement-header" + (this.state.progress?.done?" done":"")}>
+                            <span onClick={this.toggleCollapse}>Achievement: {this.state.json?.name} ({this.state.progress?.current ?? 0} / {this.state.progress?.max ?? 0})</span>
                         </header>
                         {!this.state.collapsed && <section className={"Achievement-section"}>
                             {
                                 this.state.json?.bits?
-                                    <Items ids={this.state.json?.bits?.map(value => value.id)} achievementId={this.props.id} />:
+                                    <Items ids={this.state.json?.bits?.map(value => value.id)} achievementId={this.props.id}  dataLoadedCallback={this.dataLoadedCallback}/>:
                                     <p>No items</p>
                             }
                         </section>}

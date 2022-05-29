@@ -7,7 +7,8 @@ import "./Item.scss";
 
 type ItemsProps = {
     ids: Number[]
-    achievementId: Number
+    achievementId: Number,
+    dataLoadedCallback: (progress: Progress) => void | undefined,
 }
 
 type ItemsState = {
@@ -83,14 +84,26 @@ class Items extends React.Component<ItemsProps, ItemsState> {
         });
     }
 
+    callCallback(progress : Progress) {
+        if(this.props.dataLoadedCallback) {
+            this.props.dataLoadedCallback(progress);
+        }
+    }
+
     loadProgress() : void {
         GW2Api.getProgress(this.props.achievementId)
-            .then((response) => this.setState({
-                progress: {
-                    state: state.LOADED,
-                    json: response
-                }
-            })).catch(reason => {
+            .then((response) => {
+                this.setState({
+                    progress: {
+                        state: state.LOADED,
+                        json: response
+                    }
+                });
+                this.callCallback(response);
+            })
+            .catch(reason => {
+                console.log("Could not load data for achievement: " + this.props.achievementId + ". Reason: " + reason);
+
                 if(this.progressInterval) {
                     clearInterval(this.progressInterval);
                 }
