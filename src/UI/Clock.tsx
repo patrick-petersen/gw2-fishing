@@ -130,10 +130,10 @@ class Clock extends React.Component<ClockProps, ClockState> {
     }
 
     renderTimeBlock(timeBlocks: TimeBlock[]) {
-        return timeBlocks.map(value => {
+        return timeBlocks.map((value, index) => {
             const startPercent = value.startTime / (60*60*24) * 100;
             const width = (value.endTime - value.startTime) / (60*60*24) * 100;
-            return <div className={"block"} style={{left: startPercent + "%", width: width + "%"}}>{value.name}</div>
+            return <div className={"block"} style={{left: startPercent + "%", width: width + "%"}} key={index}>{value.name}</div>
         })
     }
 
@@ -146,17 +146,17 @@ class Clock extends React.Component<ClockProps, ClockState> {
     render() {
         return (
             <div className={"clock"}>
-                {this.state.showDetails && <div className={"time"}>
+                {this.state.showDetails && <div className={"time"} key={"time details"}>
                     Date: {this.state.time.toDateString()}; Tyria Seconds: {this.getCurrentTyriaTime(this.state.time)}; Tyria Time: {this.timeToString(this.getCurrentTyriaTime(this.state.time))}
                 </div>}
-                <div>
+                <div key={"core tyria time"}>
                     {this.state.showDetails && <span>Core Tyria</span>}
                     <div className={"inner"}>
                         {this.renderTimeBlock(coreTyria)}
                         <div className={"current"} style={{left: (this.getCurrentTyriaTime(this.state.time) / 24 / 60 / 60 * 100) + "%"}}></div>
                     </div>
                 </div>
-                <div>
+                <div key={"cantha time"}>
                     {this.state.showDetails && <span>Cantha</span>}
                     <div className={"inner"}>
                         {this.renderTimeBlock(cantha)}
