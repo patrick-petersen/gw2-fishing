@@ -1709,7 +1709,7 @@ const fish : Fish[] = [
     },
     {
         "Quality": "White",
-        "Fish": "Krytan Clawfish",
+        "Fish": "Krytan Crawfish",
         "Fishing Hole": "None",
         "Open Water": true,
         "Bait": "Any",
