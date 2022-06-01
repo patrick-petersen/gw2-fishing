@@ -90,7 +90,8 @@ export type Progress = {
     bits: Number[],
     current: Number,
     max: Number,
-    done: boolean
+    done: boolean,
+    repeated?: Number
 }
 
 export abstract class GW2Api {

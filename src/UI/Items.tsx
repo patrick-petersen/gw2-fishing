@@ -117,6 +117,10 @@ class Items extends React.Component<ItemsProps, ItemsState> {
             });
     }
 
+    isDone() : boolean {
+        return (this.state.progress.json?.done ?? false) || ((this.state.progress.json?.repeated ?? 0 ) > 0);
+    }
+
     render() {
         switch (this.state.item.state) {
             case state.LOADING:
@@ -134,7 +138,7 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                             <span>Items:</span>
                         </header>
                         <section className={"Items-section"}>
-                            <table className={(this.state.progress.json && this.state.progress.json.done)?"done":"todo"}>
+                            <table className={this.isDone()?"done":"todo"}>
                                 {(() => {
                                     //TODO: Even I cant read this, refactor!
                                     const enrichedGroupedFish : EnrichedFish = this.state.item.json?.map((value, index) => {

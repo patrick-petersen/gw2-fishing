@@ -52,6 +52,9 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
             progress: progress
         });
     }
+    isDone() : boolean {
+        return (this.state.progress?.done ?? false) || ((this.state.progress?.repeated ?? 0 ) > 0);
+    }
 
     render() {
         switch (this.state.state) {
@@ -66,7 +69,7 @@ class Achievement extends React.Component<AchievementProps, AchievementState> {
             case state.LOADED:
                 return (
                     <div className="Achievement">
-                        <header className={"Achievement-header" + (this.state.progress?.done?" done":"")}>
+                        <header className={"Achievement-header" + (this.isDone()?" done":"")}>
                             <span onClick={this.toggleCollapse}>Achievement: {this.state.json?.name} ({this.state.progress?.current ?? 0} / {this.state.progress?.max ?? 0})</span>
                         </header>
                         {!this.state.collapsed && <section className={"Achievement-section"}>
