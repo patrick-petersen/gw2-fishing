@@ -2,7 +2,7 @@ import React from 'react';
 import {AchievementJson, GW2Api, state, Progress} from "../api/GW2Api";
 import Items from "./Items";
 
-import './Achievement.css';
+import './Achievement.scss';
 
 type AchievementProps = {
     id: Number

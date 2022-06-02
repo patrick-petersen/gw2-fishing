@@ -5,7 +5,7 @@ import {GW2Api} from "../api/GW2Api";
 import Cookies from 'universal-cookie';
 import Clock from "./Clock";
 
-import './Landing.css';
+import './Landing.scss';
 
 type LandingProps = {
 }

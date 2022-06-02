@@ -4,13 +4,13 @@
     max-height: 100%;
     position: absolute;
     width: 100%;
-}
 
-.header {
-    flex-grow: 0;
+    .header {
+        flex-grow: 0;
 
-}
-.content {
-    flex-grow: 1;
-    overflow: auto;
+    }
+    .content {
+        flex-grow: 1;
+        overflow: auto;
+    }
 }

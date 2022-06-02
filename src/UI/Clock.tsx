@@ -1,5 +1,5 @@
 import React from 'react';
-import './Clock.css';
+import './Clock.scss';
 
 type ClockProps = {
     id: number
