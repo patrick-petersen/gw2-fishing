@@ -26,7 +26,45 @@ export abstract class FishData {
     }
 }
 
+
+
 const fish : Fish[] = [
+    {
+        "Quality": "Gray",
+        "Fish": "Broken Trident",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Any",
+        "Achieve": "Aquatic Trash Collector",
+        "Achieve Order": "6"
+    },
+    {
+        "Quality": "Gray",
+        "Fish": "Tarnished Brass Compass",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Any",
+        "Achieve": "Aquatic Treasure Collector",
+        "Achieve Order": "1"
+    },
+    {
+        "Quality": "Gray",
+        "Fish": "Tarnished Bronze Astrolabe",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Any",
+        "Achieve": "Aquatic Treasure Collector",
+        "Achieve Order": "3"
+    },
     {
         "Quality": "White",
         "Fish": "Globefish",
