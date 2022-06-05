@@ -155,6 +155,9 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                                             aggregation[hole][time] = aggregation[hole][time] || [];
                                             aggregation[hole][time].push(currentFish);
                                         }
+                                        else {
+                                            console.warn("missing fish metadata!:" + currentFish.item.name);
+                                        }
 
                                         return aggregation;
                                     }, Object.create(null));
