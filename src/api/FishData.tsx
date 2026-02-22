@@ -13,7 +13,7 @@ export type Fish = {
     Bait: string,
     "Time of Day": TimeOfDay,
     "Notes": string,
-    "Location": string,
+    "Location": string[],
     "Achieve": string,
     "Achieve Order": string
 }
@@ -37,7 +37,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Any",
+        "Location": ["Any"],
         "Achieve": "Aquatic Trash Collector",
         "Achieve Order": "6"
     },
@@ -49,7 +49,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Any",
+        "Location": ["Any"],
         "Achieve": "Aquatic Treasure Collector",
         "Achieve Order": "1"
     },
@@ -61,7 +61,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Any",
+        "Location": ["Any"],
         "Achieve": "Aquatic Treasure Collector",
         "Achieve Order": "3"
     },
@@ -73,7 +73,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "1"
     },
@@ -85,7 +85,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "2"
     },
@@ -97,7 +97,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "3"
     },
@@ -109,7 +109,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "4"
     },
@@ -121,7 +121,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "5"
     },
@@ -133,7 +133,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "6"
     },
@@ -145,7 +145,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "7"
     },
@@ -157,7 +157,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "8"
     },
@@ -169,7 +169,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "9"
     },
@@ -181,7 +181,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "10"
     },
@@ -193,7 +193,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "11"
     },
@@ -205,7 +205,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "12"
     },
@@ -217,7 +217,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "13"
     },
@@ -229,7 +229,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "14"
     },
@@ -241,7 +241,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "15"
     },
@@ -253,7 +253,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "16"
     },
@@ -265,7 +265,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "17"
     },
@@ -277,7 +277,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "18"
     },
@@ -289,7 +289,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "19"
     },
@@ -301,7 +301,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "20"
     },
@@ -313,7 +313,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "Seitung Province Fisher",
         "Achieve Order": "21"
     },
@@ -325,7 +325,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "1"
     },
@@ -337,7 +337,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "2"
     },
@@ -349,7 +349,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "3"
     },
@@ -361,7 +361,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "4"
     },
@@ -373,7 +373,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "5"
     },
@@ -385,7 +385,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "6"
     },
@@ -397,7 +397,7 @@ const fish : Fish[] = [
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "7"
     },
@@ -409,7 +409,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "8"
     },
@@ -421,7 +421,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "9"
     },
@@ -433,7 +433,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "10"
     },
@@ -445,7 +445,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "11"
     },
@@ -457,7 +457,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "12"
     },
@@ -469,7 +469,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "13"
     },
@@ -481,7 +481,7 @@ const fish : Fish[] = [
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "14"
     },
@@ -493,7 +493,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "15"
     },
@@ -505,7 +505,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "16"
     },
@@ -517,7 +517,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "17"
     },
@@ -529,7 +529,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "18"
     },
@@ -541,7 +541,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "19"
     },
@@ -553,7 +553,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "20"
     },
@@ -565,7 +565,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "New Kaineng City",
+        "Location": ["New Kaineng City"],
         "Achieve": "Kaineng Fisher",
         "Achieve Order": "21"
     },
@@ -577,7 +577,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "1"
     },
@@ -589,7 +589,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "2"
     },
@@ -601,7 +601,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "3"
     },
@@ -613,7 +613,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "4"
     },
@@ -625,7 +625,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "5"
     },
@@ -637,7 +637,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "6"
     },
@@ -649,7 +649,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "7"
     },
@@ -661,7 +661,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "8"
     },
@@ -673,7 +673,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "9"
     },
@@ -685,7 +685,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "10"
     },
@@ -697,7 +697,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "11"
     },
@@ -709,7 +709,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "12"
     },
@@ -721,7 +721,7 @@ const fish : Fish[] = [
         "Bait": "Glow Worms",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "13"
     },
@@ -733,7 +733,7 @@ const fish : Fish[] = [
         "Bait": "Glow Worms",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Echovald Wilds",
+        "Location": ["Echovald Wilds"],
         "Achieve": "Echovald Wilds Fisher",
         "Achieve Order": "14"
     },
@@ -745,7 +745,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "1"
     },
@@ -757,7 +757,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "2"
     },
@@ -769,7 +769,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "3"
     },
@@ -781,7 +781,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "4"
     },
@@ -793,7 +793,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "5"
     },
@@ -805,7 +805,7 @@ const fish : Fish[] = [
         "Bait": "Nightcrawlers",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "6"
     },
@@ -817,7 +817,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "7"
     },
@@ -829,7 +829,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "8"
     },
@@ -841,7 +841,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "9"
     },
@@ -853,7 +853,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "10"
     },
@@ -865,7 +865,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "11"
     },
@@ -877,7 +877,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "12"
     },
@@ -889,7 +889,7 @@ const fish : Fish[] = [
         "Bait": "Nightcrawlers",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "13"
     },
@@ -901,7 +901,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Dragon's End",
+        "Location": ["Dragon's End"],
         "Achieve": "Dragon's End Fisher",
         "Achieve Order": "14"
     },
@@ -913,7 +913,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "1"
     },
@@ -925,7 +925,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "2"
     },
@@ -937,7 +937,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "3"
     },
@@ -949,7 +949,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "4"
     },
@@ -961,7 +961,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "5"
     },
@@ -973,7 +973,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "6"
     },
@@ -985,7 +985,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "7"
     },
@@ -997,7 +997,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "8"
     },
@@ -1009,7 +1009,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "9"
     },
@@ -1021,7 +1021,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "10"
     },
@@ -1033,7 +1033,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "11"
     },
@@ -1045,7 +1045,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "12"
     },
@@ -1057,7 +1057,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "13"
     },
@@ -1069,7 +1069,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "World Class Fisher",
         "Achieve Order": "14"
     },
@@ -1081,7 +1081,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "1"
     },
@@ -1093,7 +1093,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "2"
     },
@@ -1105,7 +1105,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "3"
     },
@@ -1117,7 +1117,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "4"
     },
@@ -1129,7 +1129,7 @@ const fish : Fish[] = [
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "5"
     },
@@ -1141,7 +1141,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "6"
     },
@@ -1153,7 +1153,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "7"
     },
@@ -1165,7 +1165,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "8"
     },
@@ -1177,7 +1177,7 @@ const fish : Fish[] = [
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "9"
     },
@@ -1189,7 +1189,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "10"
     },
@@ -1201,7 +1201,7 @@ const fish : Fish[] = [
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "11"
     },
@@ -1213,7 +1213,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "12"
     },
@@ -1225,7 +1225,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "13"
     },
@@ -1237,7 +1237,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "Release for 2500 karma",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "14"
     },
@@ -1249,7 +1249,7 @@ const fish : Fish[] = [
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "15"
     },
@@ -1261,7 +1261,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "16"
     },
@@ -1273,7 +1273,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "17"
     },
@@ -1285,7 +1285,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "18"
     },
@@ -1297,7 +1297,7 @@ const fish : Fish[] = [
         "Bait": "Lightning Bugs",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "19"
     },
@@ -1309,7 +1309,7 @@ const fish : Fish[] = [
         "Bait": "Lightning Bugs",
         "Time of Day": TimeOfDay.Any,
         "Notes": "Release for 1500 karma",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "20"
     },
@@ -1321,7 +1321,7 @@ const fish : Fish[] = [
         "Bait": "Lightning Bugs",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Ascalon",
+        "Location": ["Ascalon"],
         "Achieve": "Ascalonian Fisher",
         "Achieve Order": "21"
     },
@@ -1333,7 +1333,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1345,7 +1345,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1357,7 +1357,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1369,7 +1369,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1381,7 +1381,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1393,7 +1393,7 @@ const fish : Fish[] = [
         "Bait": "Scorpions",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1405,7 +1405,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1417,7 +1417,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1429,7 +1429,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1441,7 +1441,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1453,7 +1453,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1465,7 +1465,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1477,7 +1477,7 @@ const fish : Fish[] = [
         "Bait": "Scorpions",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1489,7 +1489,7 @@ const fish : Fish[] = [
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1501,7 +1501,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1513,7 +1513,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1525,7 +1525,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1537,7 +1537,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1549,7 +1549,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1561,7 +1561,7 @@ const fish : Fish[] = [
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1573,7 +1573,7 @@ const fish : Fish[] = [
         "Bait": "Scorpions",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Elon River",
+        "Location": ["\"Elon River"],
         "Achieve": " Crystal Desert",
         "Achieve Order": " Elonian Mainland\""
     },
@@ -1585,7 +1585,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "1"
     },
@@ -1597,7 +1597,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "2"
     },
@@ -1609,7 +1609,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "3"
     },
@@ -1621,7 +1621,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "4"
     },
@@ -1633,7 +1633,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "5"
     },
@@ -1645,7 +1645,7 @@ const fish : Fish[] = [
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "6"
     },
@@ -1657,7 +1657,7 @@ const fish : Fish[] = [
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "7"
     },
@@ -1669,7 +1669,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "8"
     },
@@ -1681,7 +1681,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "9"
     },
@@ -1693,7 +1693,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "10"
     },
@@ -1705,7 +1705,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "11"
     },
@@ -1717,7 +1717,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "12"
     },
@@ -1729,7 +1729,7 @@ const fish : Fish[] = [
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "13"
     },
@@ -1741,7 +1741,7 @@ const fish : Fish[] = [
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Isles of Elona",
+        "Location": ["Isles of Elona"],
         "Achieve": "Desert Isles Fisher",
         "Achieve Order": "14"
     },
@@ -1753,7 +1753,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "1"
     },
@@ -1765,7 +1765,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "2"
     },
@@ -1777,7 +1777,7 @@ const fish : Fish[] = [
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "3"
     },
@@ -1789,7 +1789,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "4"
     },
@@ -1801,7 +1801,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "5"
     },
@@ -1813,7 +1813,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "6"
     },
@@ -1825,7 +1825,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "7"
     },
@@ -1837,7 +1837,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "8"
     },
@@ -1849,7 +1849,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "9"
     },
@@ -1861,7 +1861,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "10"
     },
@@ -1873,7 +1873,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "11"
     },
@@ -1885,7 +1885,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "12"
     },
@@ -1897,7 +1897,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "13"
     },
@@ -1909,7 +1909,7 @@ const fish : Fish[] = [
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "14"
     },
@@ -1921,7 +1921,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "15"
     },
@@ -1933,7 +1933,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "16"
     },
@@ -1945,7 +1945,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "17"
     },
@@ -1957,7 +1957,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "18"
     },
@@ -1969,7 +1969,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "19"
     },
@@ -1981,7 +1981,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "20"
     },
@@ -1993,7 +1993,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Kryta",
+        "Location": ["Kryta"],
         "Achieve": "Krytan Fisher",
         "Achieve Order": "21"
     },
@@ -2005,7 +2005,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "1"
     },
@@ -2017,7 +2017,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "2"
     },
@@ -2029,7 +2029,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "3"
     },
@@ -2041,7 +2041,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "4"
     },
@@ -2053,7 +2053,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "5"
     },
@@ -2065,7 +2065,7 @@ const fish : Fish[] = [
         "Bait": "Sparkfly Larvae",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "6"
     },
@@ -2077,7 +2077,7 @@ const fish : Fish[] = [
         "Bait": "Sparkfly Larvae",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "7"
     },
@@ -2089,7 +2089,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "8"
     },
@@ -2101,7 +2101,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "9"
     },
@@ -2113,7 +2113,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "10"
     },
@@ -2125,7 +2125,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "11"
     },
@@ -2137,7 +2137,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "12"
     },
@@ -2149,7 +2149,7 @@ const fish : Fish[] = [
         "Bait": "Sparkfly Larvae",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "13"
     },
@@ -2161,7 +2161,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "14"
     },
@@ -2173,7 +2173,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "15"
     },
@@ -2185,7 +2185,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "16"
     },
@@ -2197,7 +2197,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "17"
     },
@@ -2209,7 +2209,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "18"
     },
@@ -2221,7 +2221,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "19"
     },
@@ -2233,7 +2233,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "20"
     },
@@ -2245,7 +2245,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "Release for 2500 karma",
-        "Location": "Maguuma Jungle",
+        "Location": ["Maguuma Jungle"],
         "Achieve": "Maguuma Fisher",
         "Achieve Order": "21"
     },
@@ -2257,7 +2257,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "1"
     },
@@ -2269,7 +2269,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "2"
     },
@@ -2281,7 +2281,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "3"
     },
@@ -2293,7 +2293,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "4"
     },
@@ -2305,7 +2305,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "5"
     },
@@ -2317,7 +2317,7 @@ const fish : Fish[] = [
         "Bait": "Leeches",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "6"
     },
@@ -2329,7 +2329,7 @@ const fish : Fish[] = [
         "Bait": "Leeches",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "7"
     },
@@ -2341,7 +2341,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "8"
     },
@@ -2353,7 +2353,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "9"
     },
@@ -2365,7 +2365,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "10"
     },
@@ -2377,7 +2377,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "11"
     },
@@ -2389,7 +2389,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "12"
     },
@@ -2401,7 +2401,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "13"
     },
@@ -2413,7 +2413,7 @@ const fish : Fish[] = [
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "14"
     },
@@ -2425,7 +2425,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "15"
     },
@@ -2437,7 +2437,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "16"
     },
@@ -2449,7 +2449,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "17"
     },
@@ -2461,7 +2461,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "18"
     },
@@ -2473,7 +2473,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "19"
     },
@@ -2485,7 +2485,7 @@ const fish : Fish[] = [
         "Bait": "Leeches",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "20"
     },
@@ -2497,7 +2497,7 @@ const fish : Fish[] = [
         "Bait": "Leeches",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Orr",
+        "Location": ["Orr"],
         "Achieve": "Orrian Fisher",
         "Achieve Order": "21"
     },
@@ -2509,7 +2509,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Draconis Mons",
+        "Location": ["\"Draconis Mons"],
         "Achieve": " Fireheart Rise\"",
         "Achieve Order": "Ring of Fire Fisher"
     },
@@ -2521,7 +2521,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Draconis Mons",
+        "Location": ["\"Draconis Mons"],
         "Achieve": " Fireheart Rise\"",
         "Achieve Order": "Ring of Fire Fisher"
     },
@@ -2533,7 +2533,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "\"Draconis Mons",
+        "Location": ["\"Draconis Mons"],
         "Achieve": " Fireheart Rise\"",
         "Achieve Order": "Ring of Fire Fisher"
     },
@@ -2545,7 +2545,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "\"Draconis Mons",
+        "Location": ["\"Draconis Mons"],
         "Achieve": " Fireheart Rise\"",
         "Achieve Order": "Ring of Fire Fisher"
     },
@@ -2557,7 +2557,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Draconis Mons",
+        "Location": ["\"Draconis Mons"],
         "Achieve": " Fireheart Rise\"",
         "Achieve Order": "Ring of Fire Fisher"
     },
@@ -2569,7 +2569,7 @@ const fish : Fish[] = [
         "Bait": "Lava Beetles",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "\"Draconis Mons",
+        "Location": ["\"Draconis Mons"],
         "Achieve": " Fireheart Rise\"",
         "Achieve Order": "Ring of Fire Fisher"
     },
@@ -2581,7 +2581,7 @@ const fish : Fish[] = [
         "Bait": "Lava Beetles",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "\"Draconis Mons",
+        "Location": ["\"Draconis Mons"],
         "Achieve": " Fireheart Rise\"",
         "Achieve Order": "Ring of Fire Fisher"
     },
@@ -2593,7 +2593,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ember Bay",
+        "Location": ["Ember Bay"],
         "Achieve": "Ring of Fire Fisher",
         "Achieve Order": "8"
     },
@@ -2605,7 +2605,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ember Bay",
+        "Location": ["Ember Bay"],
         "Achieve": "Ring of Fire Fisher",
         "Achieve Order": "9"
     },
@@ -2617,7 +2617,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Ember Bay",
+        "Location": ["Ember Bay"],
         "Achieve": "Ring of Fire Fisher",
         "Achieve Order": "10"
     },
@@ -2629,7 +2629,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ember Bay",
+        "Location": ["Ember Bay"],
         "Achieve": "Ring of Fire Fisher",
         "Achieve Order": "11"
     },
@@ -2641,7 +2641,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Ember Bay",
+        "Location": ["Ember Bay"],
         "Achieve": "Ring of Fire Fisher",
         "Achieve Order": "12"
     },
@@ -2653,7 +2653,7 @@ const fish : Fish[] = [
         "Bait": "Lava Beetles",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Ember Bay",
+        "Location": ["Ember Bay"],
         "Achieve": "Ring of Fire Fisher",
         "Achieve Order": "13"
     },
@@ -2665,7 +2665,7 @@ const fish : Fish[] = [
         "Bait": "Lava Beetles",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Ember Bay",
+        "Location": ["Ember Bay"],
         "Achieve": "Ring of Fire Fisher",
         "Achieve Order": "14"
     },
@@ -2677,7 +2677,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "Release for 350 karma",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "1"
     },
@@ -2689,7 +2689,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "Release for 350 karma",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "2"
     },
@@ -2701,7 +2701,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "3"
     },
@@ -2713,7 +2713,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "4"
     },
@@ -2725,7 +2725,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "5"
     },
@@ -2737,7 +2737,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "6"
     },
@@ -2749,7 +2749,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "7"
     },
@@ -2761,7 +2761,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "8"
     },
@@ -2773,7 +2773,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "9"
     },
@@ -2785,7 +2785,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "10"
     },
@@ -2797,7 +2797,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "11"
     },
@@ -2809,7 +2809,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "Release for 350 karma",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "12"
     },
@@ -2821,7 +2821,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "13"
     },
@@ -2833,7 +2833,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "Saltwater Fisher",
         "Achieve Order": "14"
     },
@@ -2845,7 +2845,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "1"
     },
@@ -2857,7 +2857,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "2"
     },
@@ -2869,7 +2869,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "3"
     },
@@ -2881,7 +2881,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "4"
     },
@@ -2893,7 +2893,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "5"
     },
@@ -2905,7 +2905,7 @@ const fish : Fish[] = [
         "Bait": "Ramshorn Snails",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "Release for 1500 karma",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "6"
     },
@@ -2917,7 +2917,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "7"
     },
@@ -2929,7 +2929,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "8"
     },
@@ -2941,7 +2941,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "9"
     },
@@ -2953,7 +2953,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "10"
     },
@@ -2965,7 +2965,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "11"
     },
@@ -2977,7 +2977,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "12"
     },
@@ -2989,7 +2989,7 @@ const fish : Fish[] = [
         "Bait": "Ramshorn Snails",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "13"
     },
@@ -3001,7 +3001,7 @@ const fish : Fish[] = [
         "Bait": "Ramshorn Snails",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "14"
     },
@@ -3013,7 +3013,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "15"
     },
@@ -3025,7 +3025,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "16"
     },
@@ -3037,7 +3037,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "17"
     },
@@ -3049,7 +3049,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "18"
     },
@@ -3061,7 +3061,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "19"
     },
@@ -3073,7 +3073,7 @@ const fish : Fish[] = [
         "Bait": "Ramshorn Snails",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "20"
     },
@@ -3085,7 +3085,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shiverpeaks",
+        "Location": ["Shiverpeaks"],
         "Achieve": "Shiverpeaks Fisher",
         "Achieve Order": "21"
     },
@@ -3097,7 +3097,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Treasure Collector",
         "Achieve Order": "1"
     },
@@ -3109,7 +3109,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Treasure Collector",
         "Achieve Order": "2"
     },
@@ -3121,7 +3121,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Treasure Collector",
         "Achieve Order": "3"
     },
@@ -3133,7 +3133,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Treasure Collector",
         "Achieve Order": "4"
     },
@@ -3145,7 +3145,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Treasure Collector",
         "Achieve Order": "5"
     },
@@ -3157,7 +3157,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Treasure Collector",
         "Achieve Order": "6"
     },
@@ -3169,7 +3169,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Treasure Collector",
         "Achieve Order": "7"
     },
@@ -3181,7 +3181,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "1"
     },
@@ -3193,7 +3193,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "2"
     },
@@ -3205,7 +3205,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "3"
     },
@@ -3217,7 +3217,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "4"
     },
@@ -3229,7 +3229,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "5"
     },
@@ -3241,7 +3241,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "6"
     },
@@ -3253,7 +3253,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "7"
     },
@@ -3265,7 +3265,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "8"
     },
@@ -3277,7 +3277,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "9"
     },
@@ -3289,7 +3289,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "10"
     },
@@ -3301,7 +3301,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "11"
     },
@@ -3313,7 +3313,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "12"
     },
@@ -3325,7 +3325,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "13"
     },
@@ -3337,7 +3337,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Anywhere",
+        "Location": ["Anywhere"],
         "Achieve": "Oceanic Trash Collector",
         "Achieve Order": "14"
     },
@@ -3349,7 +3349,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "Used as bait",
-        "Location": "Saltwater",
+        "Location": ["Saltwater"],
         "Achieve": "",
         "Achieve Order": ""
     },
@@ -3361,7 +3361,7 @@ const fish : Fish[] = [
         "Bait": "Haiju Minnows",
         "Time of Day": TimeOfDay.Any,
         "Notes": "Used for Daijun Bay renown heart",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "",
         "Achieve Order": ""
     },
@@ -3373,7 +3373,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "Used for Shinota Shore renown heart",
-        "Location": "Seitung Province",
+        "Location": ["Seitung Province"],
         "Achieve": "",
         "Achieve Order": ""
     },
@@ -3387,7 +3387,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Castora",
+        "Location": ["Castora"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "1"
     },
@@ -3399,7 +3399,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Castora",
+        "Location": ["Castora"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "2"
     },
@@ -3411,7 +3411,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shipwreck Strand",
+        "Location": ["Shipwreck Strand"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "3"
     },
@@ -3423,7 +3423,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shipwreck Strand",
+        "Location": ["Shipwreck Strand"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "4"
     },
@@ -3435,7 +3435,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Castora",
+        "Location": ["Castora"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "5"
     },
@@ -3447,7 +3447,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Castora",
+        "Location": ["Castora"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "6"
     },
@@ -3459,7 +3459,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any, //Higher chance at night
         "Notes": "",
-        "Location": "Shipwreck Strand",
+        "Location": ["Shipwreck Strand"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "7"
     },
@@ -3471,7 +3471,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any, //Higher chance at day
         "Notes": "",
-        "Location": "Shipwreck Strand",
+        "Location": ["Shipwreck Strand"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "8"
     },
@@ -3483,7 +3483,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
         "Notes": "",
-        "Location": "Shipwreck Strand",
+        "Location": ["Shipwreck Strand"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "9"
     },
@@ -3495,7 +3495,7 @@ const fish : Fish[] = [
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
         "Notes": "",
-        "Location": "Castora",
+        "Location": ["Castora"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "10"
     },
@@ -3507,7 +3507,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Castora",
+        "Location": ["Castora"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "11"
     },
@@ -3519,7 +3519,7 @@ const fish : Fish[] = [
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Nighttime,
         "Notes": "",
-        "Location": "Castora",
+        "Location": ["Castora"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "12"
     },
@@ -3531,7 +3531,7 @@ const fish : Fish[] = [
         "Bait": "Nightcrawlers",
         "Time of Day": TimeOfDay.Any, //Higher chance at day
         "Notes": "",
-        "Location": "Castora",
+        "Location": ["Castora"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "13"
     },
@@ -3543,7 +3543,7 @@ const fish : Fish[] = [
         "Bait": "Nightcrawlers",
         "Time of Day": TimeOfDay.Any, //Higher chance at day
         "Notes": "",
-        "Location": "Starlit Weald",
+        "Location": ["Starlit Weald"],
         "Achieve": "Castora Fisher",
         "Achieve Order": "14"
     },
