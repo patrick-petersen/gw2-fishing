@@ -3803,6 +3803,151 @@ const fish : Fish[] = [
     },
 
     /*Janthir*/
+    {
+        "Quality": "Blue",
+        "Fish": "Lowland Grunt",
+        "Fishing Hole": ["Freshwater", "Brackish Water"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at day
+        "Notes": "",
+        "Location": ["Lowland Shore"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "1"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Shaderock Salamander",
+        "Fishing Hole": ["Saltwater", "Brackish Water"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Lowland Shore"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "2"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Mohawk Bream",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at day
+        "Notes": "",
+        "Location": ["Lowland Shore"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "3"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Mohawk Bream",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at day
+        "Notes": "",
+        "Location": ["Lowland Shore"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "4"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Violet Screamer",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at night
+        "Notes": "",
+        "Location": ["Lowland Shore"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "5"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Viperfish",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at night
+        "Notes": "",
+        "Location": ["Lowland Shore"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "6"
+    },
+    {
+        "Quality": "Blue",
+        "Fish": "Juvenile Frogfish",
+        "Fishing Hole": ["Freshwater", "Brackish Water"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at night
+        "Notes": "",
+        "Location": ["Janthir Syntri"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "7"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Flowerhead",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //higher chance at day
+        "Notes": "",
+        "Location": ["Janthir Syntri"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "8"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Queen Parrotfish",
+        "Fishing Hole": ["Saltwater"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Janthir Syntri"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "9"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Indigo Drakefish",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Janthir Syntri"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "10"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Longhorn Boxfish",
+        "Fishing Hole": ["Saltwater", "Brackish Water"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Janthir Syntri"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "11"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Mouse-Eared Octopus",
+        "Fishing Hole": ["Saltwater"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at night
+        "Notes": "",
+        "Location": ["Janthir Syntri"],
+        "Achieve": "Janthir Fisher",
+        "Achieve Order": "12"
+    },
+
 
     /*Mistburned Barrens*/
 ];
