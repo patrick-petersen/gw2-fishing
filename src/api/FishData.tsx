@@ -3950,6 +3950,78 @@ const fish : Fish[] = [
 
 
     /*Mistburned Barrens*/
+    {
+        "Quality": "Blue",
+        "Fish": "Fishtailed Frog",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Mistburned Barrens"],
+        "Achieve": "Mistburned Barrens Fisher",
+        "Achieve Order": "1"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Feathered Snail",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Daytime,
+        "Notes": "",
+        "Location": ["Mistburned Barrens"],
+        "Achieve": "Mistburned Barrens Fisher",
+        "Achieve Order": "2"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Longbeak Parrotfish",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Daytime, //Also at dusk/dawn, but lower chance
+        "Notes": "",
+        "Location": ["Mistburned Barrens"],
+        "Achieve": "Mistburned Barrens Fisher",
+        "Achieve Order": "3"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Spineback Crab",
+        "Fishing Hole": ["Any"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Nighttime, //Also at dusk/dawn, but lower chance
+        "Notes": "",
+        "Location": ["Mistburned Barrens"],
+        "Achieve": "Mistburned Barrens Fisher",
+        "Achieve Order": "4"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Angler Eel",
+        "Fishing Hole": ["Barrens Freshwater Fish"],
+        "Open Water": false,
+        "Bait": "Sparkfly Larvae",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Mistburned Barrens"],
+        "Achieve": "Mistburned Barrens Fisher",
+        "Achieve Order": "5"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Hermit Titancrab",
+        "Fishing Hole": ["Bloodstone-Infused Pond Fish"],
+        "Open Water": false,
+        "Bait": "larva Beetles",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Mistburned Barrens"],
+        "Achieve": "Mistburned Barrens Fisher",
+        "Achieve Order": "6"
+    },
 ];
 
 const fishLookup = fish.reduce(function (aggregation, currentFish) {
