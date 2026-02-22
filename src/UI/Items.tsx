@@ -34,8 +34,12 @@ type FishByTime = {
     [key in TimeOfDay] : SingleEnrichedFish[]
 }
 
-type EnrichedFish = {
+type FishByHole = {
     [key: string]: FishByTime
+}
+
+type FishByLocation = {
+    [key: string]: FishByHole
 }
 
 class Items extends React.Component<ItemsProps, ItemsState> {
@@ -140,8 +144,8 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                         <section className={"Items-section"}>
                             <table className={this.isDone()?"done":"todo"}>
                                 {(() => {
-                                    //TODO: Even I cant read this, refactor!
-                                    const enrichedGroupedFish : EnrichedFish = this.state.item.json?.map((value, index) => {
+                                    //TODO: Even I cant read this, refactor!!
+                                    const fishByLocation : FishByLocation = this.state.item.json?.map((value, index) => {
                                         return {
                                             item: value,
                                             metadata: FishData.getFishByName(value.name),
@@ -151,11 +155,16 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                                         if(currentFish.metadata) {
                                             const holes = currentFish.metadata["Fishing Hole"];
                                             const time = currentFish.metadata["Time of Day"];
-                                            for(let holeIndex in holes) {
-                                                const hole = holes[holeIndex];
-                                                aggregation[hole] = aggregation[hole] || [];
-                                                aggregation[hole][time] = aggregation[hole][time] || [];
-                                                aggregation[hole][time].push(currentFish);
+                                            const locations = currentFish.metadata["Location"];
+                                            for (let locationIndex in locations) {
+                                                const location = locations[locationIndex];
+                                                for(let holeIndex in holes) {
+                                                    const hole = holes[holeIndex];
+                                                    aggregation[location] = aggregation[location] || [];
+                                                    aggregation[location][hole] = aggregation[location][hole] || [];
+                                                    aggregation[location][hole][time] = aggregation[location][hole][time] || [];
+                                                    aggregation[location][hole][time].push(currentFish);
+                                                }
                                             }
                                         }
                                         else {
@@ -173,15 +182,25 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                                         </tr></thead>,
                                         <tbody key={"body"}>
                                             {
-                                                Object.entries(enrichedGroupedFish).map((hole) => {
-                                                    const key = hole[0];
-                                                    const times : FishByTime = hole[1];
+                                                Object.entries(fishByLocation).map((locations) => {
+                                                    const location = locations[0];
+                                                    const holes = locations[1];
 
-                                                    return (<tr key={key}><td key={"name"}>{key}</td>
-                                                        {
-                                                            Object.values(TimeOfDay).map(time => <td key={time}>{times[time]?.map(oneFish => <Item key={oneFish.item.name} progress={oneFish.progress} {...oneFish.item}/>)}</td>)
-                                                        }
-                                                    </tr>)
+                                                    return [<tr key={location}><td key={location+"td"} colSpan={5}>{location}</td></tr>, (Object.entries(holes).map((hole) => {
+
+                                                        const time = hole[0];
+                                                        const times : FishByTime = hole[1];
+
+                                                        const key = location + time;
+
+
+                                                        return (<tr key={key}><td key={"name"}>{time}</td>
+                                                            {
+                                                                Object.values(TimeOfDay).map(time => <td key={time}>{times[time]?.map(oneFish => <Item key={oneFish.item.name} progress={oneFish.progress} {...oneFish.item}/>)}</td>)
+                                                            }
+                                                        </tr>)
+                                                    }))]
+
                                                 })
                                             }
                                         </tbody>
