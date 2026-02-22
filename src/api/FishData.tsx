@@ -8,7 +8,7 @@ export enum TimeOfDay {
 export type Fish = {
     Quality: string,
     Fish: string,
-    "Fishing Hole": string,
+    "Fishing Hole": string[],
     "Open Water": boolean,
     Bait: string,
     "Time of Day": TimeOfDay,
@@ -32,7 +32,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Broken Trident",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -44,7 +44,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Tarnished Brass Compass",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -56,7 +56,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Tarnished Bronze Astrolabe",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -68,7 +68,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Globefish",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -80,7 +80,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Bluefin Trevally",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -92,7 +92,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Cherry Salmon",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -104,7 +104,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Cutlass Fish",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -116,7 +116,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Stingray",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -128,7 +128,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Spotted Stingray",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Daytime,
@@ -140,7 +140,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Fugu Fish",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Nighttime,
@@ -152,7 +152,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Mullet",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -164,7 +164,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Corvina",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -176,7 +176,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Crimson Snapper",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -188,7 +188,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Honeycomb Grouper",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -200,7 +200,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Humphead Wrasse",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -212,7 +212,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Skipjack Tuna",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Any,
@@ -224,7 +224,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Sailfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Any,
@@ -236,7 +236,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Porgy",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -248,7 +248,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Chestnut Sea Bream",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -260,7 +260,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Green Sawfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -272,7 +272,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Tripletail",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -284,7 +284,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Dragonet",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -296,7 +296,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Mega Prawn",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Nighttime,
@@ -308,7 +308,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Sunfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Daytime,
@@ -320,7 +320,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Flying Fish",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -332,7 +332,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Blowfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -344,7 +344,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Emerald Snapper",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -356,7 +356,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Amberjack",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -368,7 +368,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Blue Dorado",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -380,7 +380,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Giant Trevally",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Any,
@@ -392,7 +392,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Bluefin Tuna",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Any,
@@ -404,7 +404,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Pollock",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -416,7 +416,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Emperor Fish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -428,7 +428,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Kahawai",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -440,7 +440,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Pufferfish",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -452,7 +452,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Sturgeon",
-        "Fishing Hole": "Channel Fish",
+        "Fishing Hole": ["Channel Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -464,7 +464,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Tarpon",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
@@ -476,7 +476,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Swordfish",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Daytime,
@@ -488,7 +488,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Sea Perch",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -500,7 +500,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Weever",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -512,7 +512,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Striped Barracuda",
-        "Fishing Hole": "Channel Fish",
+        "Fishing Hole": ["Channel Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -524,7 +524,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Dragonfish",
-        "Fishing Hole": "Channel Fish",
+        "Fishing Hole": ["Channel Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -536,7 +536,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Taimen",
-        "Fishing Hole": "Channel Fish",
+        "Fishing Hole": ["Channel Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -548,7 +548,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Starry Flounder",
-        "Fishing Hole": "Channel Fish",
+        "Fishing Hole": ["Channel Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Nighttime,
@@ -560,7 +560,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Oarfish",
-        "Fishing Hole": "Channel Fish",
+        "Fishing Hole": ["Channel Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
@@ -572,7 +572,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Freshwater Eel",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -584,7 +584,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Black Carp",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -596,7 +596,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Bullhead Catfish",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -608,7 +608,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Cherry Barb",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -620,7 +620,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Amber Trout",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -632,7 +632,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Royal Featherback",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
@@ -644,7 +644,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Melandru's Lurker",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Daytime,
@@ -656,7 +656,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Stone Loach",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -668,7 +668,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Knifefish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -680,7 +680,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Snakehead",
-        "Fishing Hole": "Grotto Fish",
+        "Fishing Hole": ["Grotto Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -692,7 +692,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Petrifish",
-        "Fishing Hole": "Grotto Fish",
+        "Fishing Hole": ["Grotto Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -704,7 +704,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Albino Gourami",
-        "Fishing Hole": "Grotto Fish",
+        "Fishing Hole": ["Grotto Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -716,7 +716,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Albino Axolotl",
-        "Fishing Hole": "Grotto Fish",
+        "Fishing Hole": ["Grotto Fish"],
         "Open Water": false,
         "Bait": "Glow Worms",
         "Time of Day": TimeOfDay.Nighttime,
@@ -728,7 +728,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Dark Sleeper",
-        "Fishing Hole": "Grotto Fish",
+        "Fishing Hole": ["Grotto Fish"],
         "Open Water": false,
         "Bait": "Glow Worms",
         "Time of Day": TimeOfDay.Daytime,
@@ -740,7 +740,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Boxfish",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -752,7 +752,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Canthan Carp",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -764,7 +764,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Jade Lamprey",
-        "Fishing Hole": "Quarry Fish",
+        "Fishing Hole": ["Quarry Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -776,7 +776,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Spotted Pufferfish",
-        "Fishing Hole": "Quarry Fish",
+        "Fishing Hole": ["Quarry Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -788,7 +788,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Giant Gourami",
-        "Fishing Hole": "Quarry Fish",
+        "Fishing Hole": ["Quarry Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -800,7 +800,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Jade Sea Turtle",
-        "Fishing Hole": "Quarry Fish",
+        "Fishing Hole": ["Quarry Fish"],
         "Open Water": false,
         "Bait": "Nightcrawlers",
         "Time of Day": TimeOfDay.Daytime,
@@ -812,7 +812,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Cuttlefish",
-        "Fishing Hole": "Quarry Fish",
+        "Fishing Hole": ["Quarry Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Nighttime,
@@ -824,7 +824,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Rohu",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -836,7 +836,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Gourami",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -848,7 +848,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Toadfish",
-        "Fishing Hole": "Cavern Fish",
+        "Fishing Hole": ["Cavern Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -860,7 +860,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Sheatfish",
-        "Fishing Hole": "Cavern Fish",
+        "Fishing Hole": ["Cavern Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -872,7 +872,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Unicorn Fish",
-        "Fishing Hole": "Cavern Fish",
+        "Fishing Hole": ["Cavern Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -884,7 +884,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Axolotl",
-        "Fishing Hole": "Cavern Fish",
+        "Fishing Hole": ["Cavern Fish"],
         "Open Water": false,
         "Bait": "Nightcrawlers",
         "Time of Day": TimeOfDay.Nighttime,
@@ -896,7 +896,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Chambered Nautilus",
-        "Fishing Hole": "Cavern Fish",
+        "Fishing Hole": ["Cavern Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
@@ -908,7 +908,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Goldfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -920,7 +920,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Armored Scalefish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -932,7 +932,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Bloodfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -944,7 +944,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Bonefish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -956,7 +956,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Clawfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -968,7 +968,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Dustfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -980,7 +980,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Sunscale Striker",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -992,7 +992,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Silverfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1004,7 +1004,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Red Herring",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1016,7 +1016,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Fangfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1028,7 +1028,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Totemfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1040,7 +1040,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Venomfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1052,7 +1052,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Twilight Striker",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -1064,7 +1064,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Moonfin Striker",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1076,7 +1076,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Bitterling",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1088,7 +1088,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Bluegill",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -1100,7 +1100,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Rock Bass",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1112,7 +1112,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Largemouth Bass",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1124,7 +1124,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Golden Trout",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -1136,7 +1136,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Gar",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Daytime,
@@ -1148,7 +1148,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Muskellunge",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -1160,7 +1160,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Bream",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1172,7 +1172,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Brook Trout",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -1184,7 +1184,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Catfish",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1196,7 +1196,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Rainbow Trout",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Daytime,
@@ -1208,7 +1208,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Ripsaw Catfish",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1220,7 +1220,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Giant Catfish",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1232,7 +1232,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Old Whiskers",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1244,7 +1244,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Cutthroat Trout",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Any,
@@ -1256,7 +1256,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Smallmouth Bass",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1268,7 +1268,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Black Crappie",
-        "Fishing Hole": "Noxious Water Fish",
+        "Fishing Hole": ["Noxious Water Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1280,7 +1280,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Yellow Perch",
-        "Fishing Hole": "Noxious Water Fish",
+        "Fishing Hole": ["Noxious Water Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -1292,7 +1292,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Warmouth",
-        "Fishing Hole": "Noxious Water Fish",
+        "Fishing Hole": ["Noxious Water Fish"],
         "Open Water": false,
         "Bait": "Lightning Bugs",
         "Time of Day": TimeOfDay.Any,
@@ -1304,7 +1304,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Aquatic Frog",
-        "Fishing Hole": "Noxious Water Fish",
+        "Fishing Hole": ["Noxious Water Fish"],
         "Open Water": false,
         "Bait": "Lightning Bugs",
         "Time of Day": TimeOfDay.Any,
@@ -1316,7 +1316,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Branded Eel",
-        "Fishing Hole": "Noxious Water Fish",
+        "Fishing Hole": ["Noxious Water Fish"],
         "Open Water": false,
         "Bait": "Lightning Bugs",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1328,7 +1328,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Elonian Bass",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1340,7 +1340,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Elon Tetra",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1352,7 +1352,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Barramundi",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1364,7 +1364,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Giant Barb",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1376,7 +1376,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Gilded Loach",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -1388,7 +1388,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Marbled Lungfish",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Scorpions",
         "Time of Day": TimeOfDay.Any,
@@ -1400,7 +1400,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Giant Paddlefish",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -1412,7 +1412,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Mahseer",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1424,7 +1424,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Lungfish",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1436,7 +1436,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Red-Eyed Piranha",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -1448,7 +1448,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Mudskipper",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1460,7 +1460,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Golden Mahseer",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -1472,7 +1472,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Striped Catfish",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Scorpions",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1484,7 +1484,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Kaluga",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Any,
@@ -1496,7 +1496,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Tilapia",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1508,7 +1508,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Zander",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1520,7 +1520,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Sand Carp",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1532,7 +1532,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Paddlefish",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1544,7 +1544,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Silver Bichir",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1556,7 +1556,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Tigerfish",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Any,
@@ -1568,7 +1568,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Vundu",
-        "Fishing Hole": "Desert Fish",
+        "Fishing Hole": ["Desert Fish"],
         "Open Water": false,
         "Bait": "Scorpions",
         "Time of Day": TimeOfDay.Any,
@@ -1580,7 +1580,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Sea Trout",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1592,7 +1592,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Cobia",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1604,7 +1604,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Diamond Trevally",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1616,7 +1616,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Yellowtail Snapper",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -1628,7 +1628,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Pompano",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1640,7 +1640,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "King Crab",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1652,7 +1652,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Beluga",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Daytime,
@@ -1664,7 +1664,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Sheepshead",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1676,7 +1676,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Parrotfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1688,7 +1688,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Roosterfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1700,7 +1700,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Opah",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1712,7 +1712,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Wahoo",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -1724,7 +1724,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Blue Marlin",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Mackerel",
         "Time of Day": TimeOfDay.Daytime,
@@ -1736,7 +1736,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Dandan",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1748,7 +1748,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Krytan Crawfish",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1760,7 +1760,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Delavan Guppy",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1772,7 +1772,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Steelhead Trout",
-        "Fishing Hole": "River Fish",
+        "Fishing Hole": ["River Fish"],
         "Open Water": false,
         "Bait": "Fish Eggs",
         "Time of Day": TimeOfDay.Any,
@@ -1784,7 +1784,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Croaker",
-        "Fishing Hole": "River Fish",
+        "Fishing Hole": ["River Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1796,7 +1796,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Divinity Angelfin",
-        "Fishing Hole": "River Fish",
+        "Fishing Hole": ["River Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -1808,7 +1808,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Queenfish",
-        "Fishing Hole": "River Fish",
+        "Fishing Hole": ["River Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Any,
@@ -1820,7 +1820,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Mud Skate",
-        "Fishing Hole": "River Fish",
+        "Fishing Hole": ["River Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1832,7 +1832,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Speckled Perch",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1844,7 +1844,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Round Goby",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1856,7 +1856,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Striped Bass",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1868,7 +1868,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Black Bass",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1880,7 +1880,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Quagmire Eel",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1892,7 +1892,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Royal Pike",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Daytime,
@@ -1904,7 +1904,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Slaughterfish",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Minnows",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1916,7 +1916,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Spotted Flounder",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1928,7 +1928,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Sailfin Molly",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1940,7 +1940,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Swampblight Lamprey",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -1952,7 +1952,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Silver Moony",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1964,7 +1964,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Krytan Puffer",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -1976,7 +1976,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Holy Mackerel",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Daytime,
@@ -1988,7 +1988,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Black Lionfish",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
@@ -2000,7 +2000,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Brackish Goby",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2012,7 +2012,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Oscar",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2024,7 +2024,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Bicuda",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2036,7 +2036,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Pacu",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2048,7 +2048,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Arowana",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2060,7 +2060,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Golden Dorado",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Sparkfly Larvae",
         "Time of Day": TimeOfDay.Daytime,
@@ -2072,7 +2072,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Arapaima",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Sparkfly Larvae",
         "Time of Day": TimeOfDay.Daytime,
@@ -2084,7 +2084,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Piranha",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2096,7 +2096,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Silver Drum",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2108,7 +2108,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Payara",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2120,7 +2120,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Peacock Bass",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2132,7 +2132,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Sardinata",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2144,7 +2144,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Jundia",
-        "Fishing Hole": "Freshwater Fish",
+        "Fishing Hole": ["Freshwater Fish"],
         "Open Water": false,
         "Bait": "Sparkfly Larvae",
         "Time of Day": TimeOfDay.Any,
@@ -2156,7 +2156,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Goliath Grouper",
-        "Fishing Hole": "Saltwater Fish",
+        "Fishing Hole": ["Saltwater Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Any,
@@ -2168,7 +2168,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Snook",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2180,7 +2180,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Surubim",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2192,7 +2192,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Maguuma Trout",
-        "Fishing Hole": "Saltwater Fish",
+        "Fishing Hole": ["Saltwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2204,7 +2204,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Wolffish",
-        "Fishing Hole": "Saltwater Fish",
+        "Fishing Hole": ["Saltwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2216,7 +2216,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Maguuma Jack",
-        "Fishing Hole": "Saltwater Fish",
+        "Fishing Hole": ["Saltwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2228,7 +2228,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Rainbow Glowfish",
-        "Fishing Hole": "Saltwater Fish",
+        "Fishing Hole": ["Saltwater Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2240,7 +2240,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Royal Starfish",
-        "Fishing Hole": "Saltwater Fish",
+        "Fishing Hole": ["Saltwater Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2252,7 +2252,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Dusky Grouper",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -2264,7 +2264,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Albino Blindfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2276,7 +2276,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Viperfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2288,7 +2288,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Abyssal Squid",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2300,7 +2300,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Stargazer",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2312,7 +2312,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Blobfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Leeches",
         "Time of Day": TimeOfDay.Any,
@@ -2324,7 +2324,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Benthic Behemoth",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Leeches",
         "Time of Day": TimeOfDay.Any,
@@ -2336,7 +2336,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Ghostfish",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2348,7 +2348,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Dead Alewife",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2360,7 +2360,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Hagfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2372,7 +2372,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Spectral Jellyfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2384,7 +2384,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Orrian Anglerfish",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2396,7 +2396,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Giant Octopus",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -2408,7 +2408,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Shipwreck Moray",
-        "Fishing Hole": "Offshore Fish",
+        "Fishing Hole": ["Offshore Fish"],
         "Open Water": false,
         "Bait": "Sardines",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2420,7 +2420,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Murkwater Darter",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2432,7 +2432,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Monkfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2444,7 +2444,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Dhuum Fish",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2456,7 +2456,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Frilled Shark",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2468,7 +2468,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Man-of-War",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2480,7 +2480,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Risen Sea Bass",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Leeches",
         "Time of Day": TimeOfDay.Any,
@@ -2492,7 +2492,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Unholy Mackerel",
-        "Fishing Hole": "Shore Fish",
+        "Fishing Hole": ["Shore Fish"],
         "Open Water": false,
         "Bait": "Leeches",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2504,7 +2504,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Volcanic Blackfish",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2516,7 +2516,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Flayfin",
-        "Fishing Hole": "Volcanic Fish",
+        "Fishing Hole": ["Volcanic Fish"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2528,7 +2528,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Garnet Ram",
-        "Fishing Hole": "Volcanic Fish",
+        "Fishing Hole": ["Volcanic Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2540,7 +2540,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Fire Eel",
-        "Fishing Hole": "Volcanic Fish",
+        "Fishing Hole": ["Volcanic Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2552,7 +2552,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Glowing Coalfish",
-        "Fishing Hole": "Volcanic Fish",
+        "Fishing Hole": ["Volcanic Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2564,7 +2564,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Magma Ray",
-        "Fishing Hole": "Volcanic Fish",
+        "Fishing Hole": ["Volcanic Fish"],
         "Open Water": false,
         "Bait": "Lava Beetles",
         "Time of Day": TimeOfDay.Daytime,
@@ -2576,7 +2576,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Stone Guiyu",
-        "Fishing Hole": "Volcanic Fish",
+        "Fishing Hole": ["Volcanic Fish"],
         "Open Water": false,
         "Bait": "Lava Beetles",
         "Time of Day": TimeOfDay.Any,
@@ -2588,7 +2588,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Firemouth",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2600,7 +2600,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Igneous Rockfish",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2612,7 +2612,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Redtail Catfish",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2624,7 +2624,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Geyser Batfin",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2636,7 +2636,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Flamefin Betta",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2648,7 +2648,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Scorpion Fish",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Lava Beetles",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2660,7 +2660,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Dunkleosteus",
-        "Fishing Hole": "Coastal Fish",
+        "Fishing Hole": ["Coastal Fish"],
         "Open Water": false,
         "Bait": "Lava Beetles",
         "Time of Day": TimeOfDay.Any,
@@ -2672,7 +2672,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Seahorse",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2684,7 +2684,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Leafy Sea Dragon",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2696,7 +2696,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Mantis Shrimp",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2708,7 +2708,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Electric Eel",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2720,7 +2720,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Rockfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2732,7 +2732,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Horseshoe Crab",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2744,7 +2744,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Sea Robin",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2756,7 +2756,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Redfin Barb",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2768,7 +2768,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Googly-Eyed Squid",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2780,7 +2780,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Shimmering Squid",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2792,7 +2792,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Vampire Squid",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2804,7 +2804,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Flapjack Octopus",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2816,7 +2816,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Aurelian Herring",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2828,7 +2828,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Red Gurnard",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2840,7 +2840,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Alewife",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2852,7 +2852,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Alpine Char",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2864,7 +2864,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "White Bass",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2876,7 +2876,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Sockeye",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2888,7 +2888,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Chain Pickerel",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2900,7 +2900,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Cerulean Salamander",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Ramshorn Snails",
         "Time of Day": TimeOfDay.Nighttime,
@@ -2912,7 +2912,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Glacial Snakehead",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Daytime,
@@ -2924,7 +2924,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Icefish",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -2936,7 +2936,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Grayling",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2948,7 +2948,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Northern Pike",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2960,7 +2960,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "King Salmon",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2972,7 +2972,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Beacon's Perch",
-        "Fishing Hole": "Boreal Fish",
+        "Fishing Hole": ["Boreal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -2984,7 +2984,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Lornar's Bass",
-        "Fishing Hole": "Lake Fish",
+        "Fishing Hole": ["Lake Fish"],
         "Open Water": false,
         "Bait": "Ramshorn Snails",
         "Time of Day": TimeOfDay.Daytime,
@@ -2996,7 +2996,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Alabaster Oscar",
-        "Fishing Hole": "Boreal Fish",
+        "Fishing Hole": ["Boreal Fish"],
         "Open Water": false,
         "Bait": "Ramshorn Snails",
         "Time of Day": TimeOfDay.Daytime,
@@ -3008,7 +3008,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Snow Crab",
-        "Fishing Hole": "None",
+        "Fishing Hole": ["None"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -3020,7 +3020,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Walleye",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Nighttime,
@@ -3032,7 +3032,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Boreal Cod",
-        "Fishing Hole": "Boreal Fish",
+        "Fishing Hole": ["Boreal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3044,7 +3044,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Icy Lumpfish",
-        "Fishing Hole": "Boreal Fish",
+        "Fishing Hole": ["Boreal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3056,7 +3056,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Mystic Remora",
-        "Fishing Hole": "Boreal Fish",
+        "Fishing Hole": ["Boreal Fish"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.DuskDawn,
@@ -3068,7 +3068,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Snowflake Eel",
-        "Fishing Hole": "Boreal Fish",
+        "Fishing Hole": ["Boreal Fish"],
         "Open Water": false,
         "Bait": "Ramshorn Snails",
         "Time of Day": TimeOfDay.Nighttime,
@@ -3080,7 +3080,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Halibut",
-        "Fishing Hole": "Boreal Fish",
+        "Fishing Hole": ["Boreal Fish"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Any,
@@ -3092,7 +3092,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Rusted Brass Compass",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3104,7 +3104,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Broken Brass Spyglass",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3116,7 +3116,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Rusted Bronze Astrolabe",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3128,7 +3128,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Antique Diving Helm",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3140,7 +3140,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Golden Merlion Statuette",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3152,7 +3152,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Antique Porcelain Vase",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3164,7 +3164,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Tarnished Silver Sextant",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3176,7 +3176,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Pockmarked Vase",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3188,7 +3188,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Broken Bottle",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3200,7 +3200,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Broken Fishing Hook",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3212,7 +3212,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Broken Oar",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3224,7 +3224,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Broken Fishing Rod",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3236,7 +3236,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Broken T rident",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3248,7 +3248,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Shattered Fishing Cage",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3260,7 +3260,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Crumbled Ancient Statue",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3272,7 +3272,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Piece of Driftwood",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3284,7 +3284,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Rotten Fish Head",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3296,7 +3296,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Fish-Shaped Stone",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3308,7 +3308,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Weathered Peg Leg",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3320,7 +3320,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Rusted Mechanism",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3332,7 +3332,7 @@ const fish : Fish[] = [
     {
         "Quality": "Gray",
         "Fish": "Tangled Net",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3344,7 +3344,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Mackerel",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3356,7 +3356,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Daijun Blackfin",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": true,
         "Bait": "Haiju Minnows",
         "Time of Day": TimeOfDay.Any,
@@ -3368,7 +3368,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Shinota Blackfin",
-        "Fishing Hole": "Special Fishing Hole",
+        "Fishing Hole": ["Special Fishing Hole"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3382,7 +3382,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Castoran Milkfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3394,7 +3394,7 @@ const fish : Fish[] = [
     {
         "Quality": "White",
         "Fish": "Castoran Sea Bass",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3406,7 +3406,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Great Bearded Goatfish",
-        "Fishing Hole": "Saltwater",
+        "Fishing Hole": ["Saltwater"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3418,7 +3418,7 @@ const fish : Fish[] = [
     {
         "Quality": "Blue",
         "Fish": "Bluefin Barratuna",
-        "Fishing Hole": "Saltwater",
+        "Fishing Hole": ["Saltwater"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3430,7 +3430,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Seaweed-Cutting Scythetail",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3442,7 +3442,7 @@ const fish : Fish[] = [
     {
         "Quality": "Green",
         "Fish": "Bearded Sunfish",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3454,7 +3454,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Ruby-Scaled Goatfish",
-        "Fishing Hole": "Saltwater",
+        "Fishing Hole": ["Saltwater"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any, //Higher chance at night
@@ -3466,7 +3466,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Sapphire-Scaled Moonfish",
-        "Fishing Hole": "Saltwater",
+        "Fishing Hole": ["Saltwater"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any, //Higher chance at day
@@ -3478,7 +3478,7 @@ const fish : Fish[] = [
     {
         "Quality": "Yellow",
         "Fish": "Emerald-Scaled Grouper",
-        "Fishing Hole": "Saltwater",
+        "Fishing Hole": ["Saltwater"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Any,
@@ -3490,7 +3490,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Castoran Bicorn",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
         "Time of Day": TimeOfDay.Daytime,
@@ -3502,7 +3502,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Illustrious Opah",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Nighttime,
@@ -3514,7 +3514,7 @@ const fish : Fish[] = [
     {
         "Quality": "Orange",
         "Fish": "Illustrious Opah",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Shrimplings",
         "Time of Day": TimeOfDay.Nighttime,
@@ -3526,7 +3526,7 @@ const fish : Fish[] = [
     {
         "Quality": "Pink",
         "Fish": "Secret Squid",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Nightcrawlers",
         "Time of Day": TimeOfDay.Any, //Higher chance at day
@@ -3538,7 +3538,7 @@ const fish : Fish[] = [
     {
         "Quality": "Purple",
         "Fish": "Illusive Jellycrab",
-        "Fishing Hole": "Any",
+        "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Nightcrawlers",
         "Time of Day": TimeOfDay.Any, //Higher chance at day
@@ -3548,6 +3548,9 @@ const fish : Fish[] = [
         "Achieve Order": "14"
     },
 
+    /*Janthir*/
+
+    /*Mistburned Barrens*/
 ];
 
 const fishLookup = fish.reduce(function (aggregation, currentFish) {

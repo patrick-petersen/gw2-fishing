@@ -149,11 +149,14 @@ class Items extends React.Component<ItemsProps, ItemsState> {
                                         }
                                     }).reduce(function (aggregation, currentFish) {
                                         if(currentFish.metadata) {
-                                            const hole = currentFish.metadata["Fishing Hole"];
+                                            const holes = currentFish.metadata["Fishing Hole"];
                                             const time = currentFish.metadata["Time of Day"];
-                                            aggregation[hole] = aggregation[hole] || [];
-                                            aggregation[hole][time] = aggregation[hole][time] || [];
-                                            aggregation[hole][time].push(currentFish);
+                                            for(let holeIndex in holes) {
+                                                const hole = holes[holeIndex];
+                                                aggregation[hole] = aggregation[hole] || [];
+                                                aggregation[hole][time] = aggregation[hole][time] || [];
+                                                aggregation[hole][time].push(currentFish);
+                                            }
                                         }
                                         else {
                                             console.warn("missing fish metadata!:" + currentFish.item.name);
