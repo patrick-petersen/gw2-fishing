@@ -3547,6 +3547,260 @@ const fish : Fish[] = [
         "Achieve": "Castora Fisher",
         "Achieve Order": "14"
     },
+    /*Horn of Maguuma*/
+    {
+        "Quality": "White",
+        "Fish": "Fractured Fish",
+        "Fishing Hole": ["Any"],
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Skywtch Archipelago", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "1"
+    },
+    {
+        "Quality": "Blue",
+        "Fish": "Queen's Flipper",
+        "Fishing Hole": ["Fractured Lake Fish"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Skywtch Archipelago", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "2"
+    },
+    {
+        "Quality": "Green",
+        "Fish": "Primal Maguuma Trout",
+        "Fishing Hole": ["Fractured Freshwater Fish"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Nighttime,
+        "Notes": "",
+        "Location": ["Skywtch Archipelago", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "3"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Codmander",
+        "Fishing Hole": ["Fractured Freshwater Fish"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Daytime,
+        "Notes": "",
+        "Location": ["Skywtch Archipelago", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "4"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Jokopu",
+        "Fishing Hole": ["Fractured Desert Fish"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Daytime,
+        "Notes": "",
+        "Location": ["Skywtch Archipelago", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "5"
+    },
+    {
+        "Quality": "Pink",
+        "Fish": "Empress Fish",
+        "Fishing Hole": ["Fractured Channel Fish"],
+        "Open Water": false,
+        "Bait": "Mackerel",
+        "Time of Day": TimeOfDay.Daytime,
+        "Notes": "",
+        "Location": ["Skywtch Archipelago", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "6"
+    },
+    {
+        "Quality": "Purple",
+        "Fish": "Three-Eyed Carp",
+        "Fishing Hole": ["Fractured Channel Fish"],
+        "Open Water": false,
+        "Bait": "Glow Worms",
+        "Time of Day": TimeOfDay.Nighttime,
+        "Notes": "",
+        "Location": ["Skywtch Archipelago", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "7"
+    },
+    {
+        "Quality": "White",
+        "Fish": "Bastion Fish",
+        "Fishing Hole": ["Any"],
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Amnytas", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "8"
+    },
+    {
+        "Quality": "Blue",
+        "Fish": "Natural Fish",
+        "Fishing Hole": ["Astral Fish", "Spire Fish"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Amnytas", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "9"
+    },
+    {
+        "Quality": "Green",
+        "Fish": "Knowlede Fish",
+        "Fishing Hole": ["Astral Fish"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Daytime,
+        "Notes": "",
+        "Location": ["Amnytas", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "10"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Strength Fish",
+        "Fishing Hole": ["Astral Fish"],
+        "Open Water": false,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Nighttime,
+        "Notes": "",
+        "Location": ["Amnytas", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "11"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Balance Fish",
+        "Fishing Hole": ["Any", "Spire Fish"],
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Daytime, //higher chance at dusk&dawn
+        //TODO: how to show this in a table?... Maybe split by area?
+        "Notes": "Found in the waters of Amnytas anywhere, anytime, and found in Inner Nayos. However it is commonly seen with Spire Fish during dawn and dusk.",
+        "Location": ["Amnytas", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "12"
+    },
+    {
+        "Quality": "Pink",
+        "Fish": "Obscure Fish",
+        "Fishing Hole": ["Astral Fish"],
+        "Open Water": false,
+        "Bait": "Lightning Bug",
+        "Time of Day": TimeOfDay.Daytime,
+        "Notes": "",
+        "Location": ["Amnytas", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "13"
+    },
+    {
+        "Quality": "Purple",
+        "Fish": "Celestial Fish",
+        "Fishing Hole": ["Spire Fish"],
+        "Open Water": false,
+        "Bait": "Fish Eggs",
+        "Time of Day": TimeOfDay.Nighttime,
+        "Notes": "",
+        "Location": ["Amnytas", "Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "14"
+    },
+    {
+        "Quality": "White",
+        "Fish": "Daydream",
+        "Fishing Hole": ["Any"],
+        "Open Water": true, //Higher chance
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "15"
+    },
+    {
+        "Quality": "Blue",
+        "Fish": "Phantom Pollock",
+        "Fishing Hole": ["Any"],
+        "Open Water": true, //higher chance
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": ["Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "16"
+    },
+    {
+        "Quality": "Green",
+        "Fish": "Buried Angst",
+        "Fishing Hole": ["Any", "Dream Fish"/*higher chance*/],
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Daytime,
+        "Notes": "",
+        "Location": ["Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "17"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Blightbob",
+        "Fishing Hole": ["Any", "Nayosian Fish"/*higher chance*/],
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //higher at night
+        "Notes": "",
+        "Location": ["Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "18"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Frenzied Cephalopod",
+        "Fishing Hole": ["Any", "Dream Fish"/*higher chance*/],
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //higher chance at day
+        "Notes": "",
+        "Location": ["Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "19"
+    },
+    {
+        "Quality": "Pink",
+        "Fish": "Glutfish",
+        "Fishing Hole": ["Nayosian Fish"],
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //higher at day
+        "Notes": "",
+        "Location": ["Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "20"
+    },
+    {
+        "Quality": "Purple",
+        "Fish": "Maddened Mackerel",
+        "Fishing Hole": ["Any", "Dream Fish"/*higher chance*/],
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Hint says higher chance at night, but not that it can be caught any other time
+        "Notes": "",
+        "Location": ["Inner Nayos"],
+        "Achieve": "Horn of Maguuma Fisher",
+        "Achieve Order": "21"
+    },
 
     /*Janthir*/
 
