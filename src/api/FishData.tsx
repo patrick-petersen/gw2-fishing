@@ -3376,7 +3376,178 @@ const fish : Fish[] = [
         "Location": "Seitung Province",
         "Achieve": "",
         "Achieve Order": ""
-    }
+    },
+
+/*Castora*/
+    {
+        "Quality": "White",
+        "Fish": "Castoran Milkfish",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Castora",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "1"
+    },
+    {
+        "Quality": "White",
+        "Fish": "Castoran Sea Bass",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Castora",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "2"
+    },
+    {
+        "Quality": "Blue",
+        "Fish": "Great Bearded Goatfish",
+        "Fishing Hole": "Saltwater",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Shipwreck Strand",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "3"
+    },
+    {
+        "Quality": "Blue",
+        "Fish": "Bluefin Barratuna",
+        "Fishing Hole": "Saltwater",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Shipwreck Strand",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "4"
+    },
+    {
+        "Quality": "Green",
+        "Fish": "Seaweed-Cutting Scythetail",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Castora",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "5"
+    },
+    {
+        "Quality": "Green",
+        "Fish": "Bearded Sunfish",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Castora",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "6"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Ruby-Scaled Goatfish",
+        "Fishing Hole": "Saltwater",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at night
+        "Notes": "",
+        "Location": "Shipwreck Strand",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "7"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Sapphire-Scaled Moonfish",
+        "Fishing Hole": "Saltwater",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any, //Higher chance at day
+        "Notes": "",
+        "Location": "Shipwreck Strand",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "8"
+    },
+    {
+        "Quality": "Yellow",
+        "Fish": "Emerald-Scaled Grouper",
+        "Fishing Hole": "Saltwater",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Any,
+        "Notes": "",
+        "Location": "Shipwreck Strand",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "9"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Castoran Bicorn",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Any",
+        "Time of Day": TimeOfDay.Daytime,
+        "Notes": "",
+        "Location": "Castora",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "10"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Illustrious Opah",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Shrimplings",
+        "Time of Day": TimeOfDay.Nighttime,
+        "Notes": "",
+        "Location": "Castora",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "11"
+    },
+    {
+        "Quality": "Orange",
+        "Fish": "Illustrious Opah",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Shrimplings",
+        "Time of Day": TimeOfDay.Nighttime,
+        "Notes": "",
+        "Location": "Castora",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "12"
+    },
+    {
+        "Quality": "Pink",
+        "Fish": "Secret Squid",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Nightcrawlers",
+        "Time of Day": TimeOfDay.Any, //Higher chance at day
+        "Notes": "",
+        "Location": "Castora",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "13"
+    },
+    {
+        "Quality": "Purple",
+        "Fish": "Illusive Jellycrab",
+        "Fishing Hole": "Any",
+        "Open Water": true,
+        "Bait": "Nightcrawlers",
+        "Time of Day": TimeOfDay.Any, //Higher chance at day
+        "Notes": "",
+        "Location": "Starlit Weald",
+        "Achieve": "Castora Fisher",
+        "Achieve Order": "14"
+    },
+
 ];
 
 const fishLookup = fish.reduce(function (aggregation, currentFish) {
