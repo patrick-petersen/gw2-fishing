@@ -3513,11 +3513,11 @@ const fish : Fish[] = [
     },
     {
         "Quality": "Orange",
-        "Fish": "Illustrious Opah",
+        "Fish": "Elusive Boxcrab",
         "Fishing Hole": ["Any"],
         "Open Water": false,
-        "Bait": "Shrimplings",
-        "Time of Day": TimeOfDay.Nighttime,
+        "Bait": "Sparkfly Larvae",
+        "Time of Day": TimeOfDay.Any,
         "Notes": "",
         "Location": ["Castora"],
         "Achieve": "Castora Fisher",
@@ -3841,11 +3841,11 @@ const fish : Fish[] = [
     },
     {
         "Quality": "Yellow",
-        "Fish": "Mohawk Bream",
+        "Fish": "Spectacled Lumper",
         "Fishing Hole": ["Any"],
         "Open Water": false,
         "Bait": "Any",
-        "Time of Day": TimeOfDay.Any, //Higher chance at day
+        "Time of Day": TimeOfDay.Any, //Higher chance at night
         "Notes": "",
         "Location": ["Lowland Shore"],
         "Achieve": "Janthir Fisher",
