@@ -3658,7 +3658,7 @@ const fish : Fish[] = [
     },
     {
         "Quality": "Green",
-        "Fish": "Knowlede Fish",
+        "Fish": "Knowledge Fish",
         "Fishing Hole": ["Astral Fish"],
         "Open Water": false,
         "Bait": "Any",
